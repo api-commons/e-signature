@@ -84,3 +84,11 @@ decisions:
   - "`participants` and `parties` are recipients only beneath an envelope, document, contract or
     signature request; a call's participants and a chat room's are not."
   - "Fields are `signature_field`, DocuSign's tabs and PDF form fields included."
+
+workflows:
+  - id: send-for-signature
+    summary: Create an envelope from a template and add a recipient
+    steps:
+      - {op: getTemplate, id: template, path: {"{template_id}": "$inputs.template_id"}}
+      - {op: createEnvelope, id: envelope, link: {template_id: "$steps.template.outputs.id"}}
+      - {op: createRecipient, id: recipient, path: {"{envelope_id}": "$steps.envelope.outputs.id"}}

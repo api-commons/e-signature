@@ -1,0 +1,59 @@
+arazzo: 1.0.1
+info:
+  title: E-Signature workflows (API Commons)
+  version: 0.1.0-draft.20261111
+  summary: Reference workflows over the common E-Signature operations.
+  description: 'Reference compositions of the operations this context''s providers share. Not measured: every step
+    is a core- or extended-tier operation of the common OpenAPI, so the workflow runs against any provider that
+    implements those operations (see crosswalk/).'
+sourceDescriptions:
+- name: e-signature
+  url: ./openapi.yml
+  type: openapi
+workflows:
+- workflowId: send-for-signature
+  summary: Create an envelope from a template and add a recipient
+  description: Create an envelope from a template and add a recipient.
+  inputs:
+    type: object
+    required:
+    - template_id
+    properties:
+      template_id:
+        type: string
+  steps:
+  - stepId: template
+    operationId: getTemplate
+    description: Get a template -- a core-tier operation (68% of providers).
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      id: $response.body#/id
+    parameters:
+    - name: template_id
+      in: path
+      value: $inputs.template_id
+  - stepId: envelope
+    operationId: createEnvelope
+    description: Create an envelope -- a core-tier operation (74% of providers).
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      id: $response.body#/id
+    requestBody:
+      contentType: application/json
+      payload:
+        template_id: $steps.template.outputs.id
+  - stepId: recipient
+    operationId: createRecipient
+    description: Create a recipient -- a core-tier operation (50% of providers).
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      id: $response.body#/id
+    parameters:
+    - name: envelope_id
+      in: path
+      value: $steps.envelope.outputs.id
+  x-commons-tiers:
+  - core
