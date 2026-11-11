@@ -40,13 +40,14 @@ concepts:
     - openapi/_original/docusign-esignature-openapi.yml#GET /accounts/{accountId}/envelopes
     - openapi/_original/docusign-esignature-openapi.yml#GET /accounts/{accountId}/envelopes/{envelopeId}
     - openapi/_original/docusign-esignature-openapi.yml#POST /accounts/{accountId}/envelopes
-  signer:
+  recipient:
     path_segment:
     - recipients
     - recipient
     properties:
       email: email
-    core_coverage: 0.25
+      id: recipientId
+    core_coverage: 0.5
     evidence:
     - openapi/_original/docusign-esignature-openapi.yml#DELETE /accounts/{accountId}/envelopes/{envelopeId}/recipients
     - openapi/_original/docusign-esignature-openapi.yml#GET /accounts/{accountId}/envelopes/{envelopeId}/recipients

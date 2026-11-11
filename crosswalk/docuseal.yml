@@ -34,7 +34,7 @@ concepts:
     - openapi/_original/docuseal-docuseal-api-openapi.yml#GET /submissions/{id}
     - openapi/_original/docuseal-docuseal-api-openapi.yml#POST /submissions
     - openapi/_original/docuseal-docuseal-api-openapi.yml#PUT /templates/{id}/documents
-  signer:
+  recipient:
     path_segment:
     - submitters
     properties:

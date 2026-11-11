@@ -22,7 +22,7 @@ concepts:
     - openapi/_original/airslate-openapi.json#GET /user/documents
     - openapi/_original/airslate-openapi.json#GET /v2/document-groups/{document_group_id}/free-form-invites/{dg_freeform_invite_id}/documents
     - openapi/_original/airslate-openapi.json#PUT /folder/{folder_unique_id}/documents
-  signer:
+  recipient:
     path_segment:
     - recipients
     properties: {}

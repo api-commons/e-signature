@@ -24,7 +24,7 @@ concepts:
     - openapi/_original/sign-openapi.json#GET /documents/{documentId}
     - openapi/_original/sign-openapi.json#POST /documents
     - openapi/_original/signicat-data-verification-openapi.yml#GET /organizations/documents
-  signer:
+  recipient:
     path_segment:
     - signers
     - recipients

@@ -26,7 +26,7 @@ concepts:
     - openapi/_original/pandadoc-rest-api-openapi.yml#GET /documents
     - openapi/_original/pandadoc-rest-api-openapi.yml#GET /documents/{id}
     - openapi/_original/pandadoc-rest-api-openapi.yml#POST /documents
-  signer:
+  recipient:
     path_segment:
     - recipients
     properties:
@@ -61,7 +61,7 @@ concepts:
       type: type
       name: name
       required: required
-      signer_id: role
+      recipient_id: role
     core_coverage: 0.8
     evidence:
     - openapi/_original/pandadoc-rest-api-openapi.yml#GET /documents/{id}/fields

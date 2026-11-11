@@ -26,7 +26,7 @@ concepts:
     - openapi/_original/skribble-sign-v2-openapi.yml#GET /documents
     - openapi/_original/skribble-sign-v2-openapi.yml#GET /documents/{DOC_ID}
     - openapi/_original/skribble-sign-v2-openapi.yml#GET /signature-requests
-  signer:
+  recipient:
     path_segment:
     - signers
     properties: {}

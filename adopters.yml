@@ -12,8 +12,8 @@ adopters:
   crosswalk: crosswalk/airslate.yml
   concepts:
   - envelope
+  - recipient
   - signature_field
-  - signer
   - template
 - provider: cacheflow
   apis_io: https://apis.io/providers/cacheflow/
@@ -52,30 +52,30 @@ adopters:
   crosswalk: crosswalk/documenso.yml
   concepts:
   - envelope
+  - recipient
   - signature_field
-  - signer
   - template
 - provider: docupilot
   apis_io: https://apis.io/providers/docupilot/
   crosswalk: crosswalk/docupilot.yml
   concepts:
   - envelope
-  - signer
+  - recipient
   - template
 - provider: docuseal
   apis_io: https://apis.io/providers/docuseal/
   crosswalk: crosswalk/docuseal.yml
   concepts:
   - envelope
-  - signer
+  - recipient
   - template
 - provider: docusign
   apis_io: https://apis.io/providers/docusign/
   crosswalk: crosswalk/docusign.yml
   concepts:
   - envelope
+  - recipient
   - signature_field
-  - signer
   - template
 - provider: evisort
   apis_io: https://apis.io/providers/evisort/
@@ -101,22 +101,22 @@ adopters:
   crosswalk: crosswalk/getaccept.yml
   concepts:
   - envelope
+  - recipient
   - signature_field
-  - signer
   - template
 - provider: gonitro
   apis_io: https://apis.io/providers/gonitro/
   crosswalk: crosswalk/gonitro.yml
   concepts:
   - envelope
+  - recipient
   - signature_field
-  - signer
 - provider: ironclad
   apis_io: https://apis.io/providers/ironclad/
   crosswalk: crosswalk/ironclad.yml
   concepts:
   - envelope
-  - signer
+  - recipient
 - provider: jotform
   apis_io: https://apis.io/providers/jotform/
   crosswalk: crosswalk/jotform.yml
@@ -151,8 +151,8 @@ adopters:
   crosswalk: crosswalk/pandadoc.yml
   concepts:
   - envelope
+  - recipient
   - signature_field
-  - signer
   - template
 - provider: paperform
   apis_io: https://apis.io/providers/paperform/
@@ -165,15 +165,15 @@ adopters:
   crosswalk: crosswalk/pdffiller.yml
   concepts:
   - envelope
+  - recipient
   - signature_field
-  - signer
   - template
 - provider: rocket-lawyer
   apis_io: https://apis.io/providers/rocket-lawyer/
   crosswalk: crosswalk/rocket-lawyer.yml
   concepts:
   - envelope
-  - signer
+  - recipient
   - template
 - provider: sadq-holding-limited
   apis_io: https://apis.io/providers/sadq-holding-limited/
@@ -186,26 +186,26 @@ adopters:
   crosswalk: crosswalk/signaturely.yml
   concepts:
   - envelope
-  - signer
+  - recipient
   - template
 - provider: signicat
   apis_io: https://apis.io/providers/signicat/
   crosswalk: crosswalk/signicat.yml
   concepts:
   - envelope
-  - signer
+  - recipient
 - provider: signwell
   apis_io: https://apis.io/providers/signwell/
   crosswalk: crosswalk/signwell.yml
   concepts:
   - envelope
-  - signer
+  - recipient
 - provider: skribble
   apis_io: https://apis.io/providers/skribble/
   crosswalk: crosswalk/skribble.yml
   concepts:
   - envelope
-  - signer
+  - recipient
 - provider: skyslope
   apis_io: https://apis.io/providers/skyslope/
   crosswalk: crosswalk/skyslope.yml
@@ -223,8 +223,8 @@ adopters:
   crosswalk: crosswalk/yousign.yml
   concepts:
   - envelope
+  - recipient
   - signature_field
-  - signer
   - template
 - provider: zoho-writer
   apis_io: https://apis.io/providers/zoho-writer/

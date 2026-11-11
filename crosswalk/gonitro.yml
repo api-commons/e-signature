@@ -18,7 +18,7 @@ concepts:
     - openapi/_original/gonitro-sign-openapi.json#GET /sign/envelopes/{envelopeID}
     - openapi/_original/gonitro-sign-openapi.json#PATCH /sign/envelopes/{envelopeID}
     - openapi/_original/gonitro-sign-openapi.json#POST /sign/envelopes
-  signer:
+  recipient:
     path_segment:
     - participants
     properties:

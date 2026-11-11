@@ -30,7 +30,7 @@ concepts:
     - openapi/_original/signwell-signwell-api-openapi.yml#GET /api/v1/documents
     - openapi/_original/signwell-signwell-api-openapi.yml#GET /api/v1/documents/{id}
     - openapi/_original/signwell-signwell-api-openapi.yml#POST /api/v1/document_templates/documents
-  signer:
+  recipient:
     path_segment:
     - recipients
     properties:

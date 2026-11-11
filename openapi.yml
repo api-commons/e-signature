@@ -100,12 +100,14 @@ paths:
         content:
           application/json:
             schema: *id001
-  /signers:
+  /envelopes/{envelope_id}/recipients:
+    parameters:
+    - $ref: '#/components/parameters/envelope_id'
     get:
-      operationId: listSigners
-      summary: List signers
+      operationId: listRecipients
+      summary: List recipients
       tags:
-      - Signers
+      - Recipients
       x-commons-tier: core
       x-commons-share: 0.812
       responses:
@@ -116,7 +118,7 @@ paths:
               schema:
                 type: array
                 items: &id002
-                  $ref: '#/components/schemas/Signer'
+                  $ref: '#/components/schemas/Recipient'
       parameters:
       - name: limit
         in: query
@@ -127,10 +129,10 @@ paths:
         schema:
           type: string
     post:
-      operationId: createSigner
-      summary: Create a signer
+      operationId: createRecipient
+      summary: Create a recipient
       tags:
-      - Signers
+      - Recipients
       x-commons-tier: core
       x-commons-share: 0.5
       responses:
@@ -144,14 +146,15 @@ paths:
         content:
           application/json:
             schema: *id002
-  /signers/{signer_id}:
+  /envelopes/{envelope_id}/recipients/{recipient_id}:
     parameters:
-    - $ref: '#/components/parameters/signer_id'
+    - $ref: '#/components/parameters/envelope_id'
+    - $ref: '#/components/parameters/recipient_id'
     delete:
-      operationId: deleteSigner
-      summary: Delete a signer
+      operationId: deleteRecipient
+      summary: Delete a recipient
       tags:
-      - Signers
+      - Recipients
       x-commons-tier: core
       x-commons-share: 0.625
       responses:
@@ -161,10 +164,10 @@ paths:
             application/json:
               schema: *id002
     patch:
-      operationId: updateSigner
-      summary: Update a signer
+      operationId: updateRecipient
+      summary: Update a recipient
       tags:
-      - Signers
+      - Recipients
       x-commons-tier: core
       x-commons-share: 0.625
       responses:
@@ -179,10 +182,10 @@ paths:
           application/json:
             schema: *id002
     get:
-      operationId: getSigner
-      summary: Get a signer
+      operationId: getRecipient
+      summary: Get a recipient
       tags:
-      - Signers
+      - Recipients
       x-commons-tier: extended
       x-commons-share: 0.25
       responses:
@@ -364,8 +367,8 @@ components:
   schemas:
     Envelope:
       $ref: ./schema/envelope.json
-    Signer:
-      $ref: ./schema/signer.json
+    Recipient:
+      $ref: ./schema/recipient.json
     Template:
       $ref: ./schema/template.json
     SignatureField:
@@ -377,8 +380,8 @@ components:
       required: true
       schema:
         type: string
-    signer_id:
-      name: signer_id
+    recipient_id:
+      name: recipient_id
       in: path
       required: true
       schema:

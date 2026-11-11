@@ -27,7 +27,7 @@ concepts:
     - openapi/_original/yousign-public-api-v3-openapi.yml#GET /signature_requests/{signatureRequestId}
     - openapi/_original/yousign-public-api-v3-openapi.yml#PATCH /signature_requests/{signatureRequestId}
     - openapi/_original/yousign-public-api-v3-openapi.yml#POST /documents
-  signer:
+  recipient:
     path_segment:
     - signers
     properties:
@@ -63,7 +63,7 @@ concepts:
       id:
       - id
       - document_id
-      signer_id: signer_id
+      recipient_id: signer_id
       width: width
       height: height
     core_coverage: 0.6

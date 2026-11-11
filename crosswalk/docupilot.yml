@@ -24,12 +24,14 @@ concepts:
     - openapi/_original/openapi-app.yaml#GET /dashboard/esign/envelopes/
     - openapi/_original/openapi-app.yaml#PATCH /dashboard/esign/envelopes/{id}/
     - openapi/_original/openapi-app.yaml#POST /dashboard/esign/envelopes/
-  signer:
+  recipient:
     path_segment:
     - recipients
     properties:
       email: email_address
-      id: id
+      id:
+      - id
+      - recipient_id
       status: status
       name:
       - subject

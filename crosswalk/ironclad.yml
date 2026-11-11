@@ -11,7 +11,7 @@ concepts:
     evidence:
     - openapi/_original/ironclad-public-api-openapi.yml#GET /workflows/{id}/documents
     - openapi/_original/ironclad-public-api-openapi.yml#POST /workflows/{id}/documents/{attributeId}
-  signer:
+  recipient:
     path_segment:
     - signers
     properties:

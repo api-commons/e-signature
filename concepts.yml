@@ -32,9 +32,10 @@ concepts:
       sender_id: [sender, owner, created_by, author, requester_email, requester]
       template_id: [template, template_ids]
       signing_url: [signing_link, sign_url, url, embed_url]
-  signer:
+  recipient:
     requires: [envelope]
-    segments: [signers, signer, recipients, recipient, signatories, submitters,
+    path: /envelopes/{envelope_id}/recipients
+    segments: [recipients, recipient, signers, signer, signatories, submitters,
                "participants@envelopes|envelope|documents|document|signature_requests|signing-requests|contracts|sign",
                "parties@envelopes|documents|contracts|binders|agreements"]
     aliases:
@@ -55,7 +56,7 @@ concepts:
       type: [field_type, kind, tab_type]
       page: [page_number]
       required: [is_required, mandatory]
-      signer_id: [recipient_id, role, assigned_to, signer]
+      recipient_id: [signer_id, role, assigned_to, signer, recipient]
 
 exclude:
   envelope:
@@ -66,7 +67,7 @@ duplicates:
   gonitro: [nitro-software]
 
 findings:
-  - "A signer agrees on email, name, role and status -- the routing information every signing
+  - "A recipient agrees on email, name, role and status -- the routing information every signing
     flow needs -- across DocuSign, Dropbox Sign, PandaDoc, Documenso and the rest."
   - "Signature fields agree on type, name and whether they are required, so a field layout
     maps between products even where the documents do not."
@@ -76,7 +77,10 @@ decisions:
   - "The cohort is the e-signature and contract-management tags only. With Document
     Management in it, `/documents` brought in database and editor documents."
   - "The signing transaction is an `envelope` (`/envelopes`), though most products call it a
-    document: `/documents` is the files context's, and envelope means only one thing."
-  - "`participants` and `parties` are signers only beneath an envelope, document, contract or
+    document (28 providers, against 10 for envelope): `/documents` is the files context's,
+    and envelope means only one thing."
+  - "A signer is a `recipient` at `/envelopes/{envelope_id}/recipients`: recipients lead (10
+    to 5), and the word covers carbon-copies and approvers as well as signers."
+  - "`participants` and `parties` are recipients only beneath an envelope, document, contract or
     signature request; a call's participants and a chat room's are not."
   - "Fields are `signature_field`, DocuSign's tabs and PDF form fields included."

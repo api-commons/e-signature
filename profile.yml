@@ -284,7 +284,7 @@ concepts:
     - reminders
     - role
     - sent_date
-  signer:
+  recipient:
     segments_seen:
       recipients: 9
       signers: 5
@@ -334,13 +334,15 @@ concepts:
       - email_address
     - name: id
       tier: core
-      providers: 11
-      share: 0.733
+      providers: 12
+      share: 0.8
       type: string
       spellings:
       - id
       - documentId
+      - recipient_id
       - uuid
+      - recipientId
       - ID
     - name: status
       tier: core
@@ -434,13 +436,12 @@ concepts:
       type: string
       spellings:
       - updated_at
-    long_tail_count: 159
+    long_tail_count: 158
     long_tail_sample:
     - authentication
     - company_name
     - mobile
     - phone
-    - recipient_id
     - user_id
     - addons
     - agents
@@ -476,6 +477,7 @@ concepts:
     - delegates
     - delivery_mode
     - description
+    - document_signature
   template:
     segments_seen:
       templates: 22
@@ -710,7 +712,7 @@ concepts:
       - required
       - IsRequired
       - is_required
-    - name: signer_id
+    - name: recipient_id
       tier: core
       providers: 6
       share: 0.5

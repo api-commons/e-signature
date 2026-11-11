@@ -13,9 +13,9 @@ generated. Every number below is a count of providers.
 | Concept | Expose it | Readable schema | Core properties (share) | Collection named |
 | --- | ---: | ---: | --- | --- |
 | envelope | 35 | 30 | id 93%, name 77%, status 73%, created_at 70%, metadata 50% | documents 26, envelopes 5, submissions 4, envelope 4 |
-| signer | 16 | 15 | email 80%, id 73%, status 60%, name 53% | recipients 9, signers 5, submitters 1, recipient 1 |
+| recipient | 16 | 15 | email 80%, id 80%, status 60%, name 53% | recipients 9, signers 5, submitters 1, recipient 1 |
 | template | 25 | 22 | id 96%, name 82%, created_at 59% | templates 22, template 6 |
-| signature_field | 14 | 12 | type 83%, id 67%, name 67%, required 58%, signer_id 50% | fields 14, tabs 1 |
+| signature_field | 14 | 12 | type 83%, id 67%, name 67%, required 58%, recipient_id 50% | fields 14, tabs 1 |
 
 Cohort: 72 providers with harvested OpenAPI, 35 crosswalks. Of the providers exposing a envelope: 74% create, 80% list, 77% fetch, 43% update, 71% delete. Generated 2026-11-10 by build.py.
 <!-- /commons:summary -->
@@ -25,7 +25,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 
 ## What the measurement shows
 
-- A signer agrees on email, name, role and status -- the routing information every signing flow needs -- across DocuSign, Dropbox Sign, PandaDoc, Documenso and the rest.
+- A recipient agrees on email, name, role and status -- the routing information every signing flow needs -- across DocuSign, Dropbox Sign, PandaDoc, Documenso and the rest.
 - Signature fields agree on type, name and whether they are required, so a field layout maps between products even where the documents do not.
 - The envelope itself agrees only on id, name, status and created_at: what it carries (documents, signers, expiry) is modelled differently by every provider.
 
@@ -48,8 +48,9 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 These are calls, not measurements, recorded so they can be revisited as the method matures.
 
 - The cohort is the e-signature and contract-management tags only. With Document Management in it, `/documents` brought in database and editor documents.
-- The signing transaction is an `envelope` (`/envelopes`), though most products call it a document: `/documents` is the files context's, and envelope means only one thing.
-- `participants` and `parties` are signers only beneath an envelope, document, contract or signature request; a call's participants and a chat room's are not.
+- The signing transaction is an `envelope` (`/envelopes`), though most products call it a document (28 providers, against 10 for envelope): `/documents` is the files context's, and envelope means only one thing.
+- A signer is a `recipient` at `/envelopes/{envelope_id}/recipients`: recipients lead (10 to 5), and the word covers carbon-copies and approvers as well as signers.
+- `participants` and `parties` are recipients only beneath an envelope, document, contract or signature request; a call's participants and a chat room's are not.
 - Fields are `signature_field`, DocuSign's tabs and PDF form fields included.
 
 ## Rebuild

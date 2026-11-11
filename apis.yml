@@ -38,8 +38,8 @@ apis:
     name: envelope
     url: https://raw.githubusercontent.com/api-commons/e-signature/main/schema/envelope.json
   - type: JSONSchema
-    name: signer
-    url: https://raw.githubusercontent.com/api-commons/e-signature/main/schema/signer.json
+    name: recipient
+    url: https://raw.githubusercontent.com/api-commons/e-signature/main/schema/recipient.json
   - type: JSONSchema
     name: template
     url: https://raw.githubusercontent.com/api-commons/e-signature/main/schema/template.json

@@ -56,7 +56,7 @@ concepts:
       - field_type
       id: id
       required: required
-      signer_id: recipient_id
+      recipient_id: recipient_id
       width: width
     core_coverage: 0.8
     evidence:

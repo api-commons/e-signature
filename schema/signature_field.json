@@ -55,7 +55,7 @@
         "is_required"
       ]
     },
-    "signer_id": {
+    "recipient_id": {
       "type": "string",
       "x-commons-tier": "core",
       "x-commons-share": 0.5,

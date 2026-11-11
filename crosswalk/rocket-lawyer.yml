@@ -18,7 +18,7 @@ concepts:
     - openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#GET /binders/{binderId}/documents/{documentId}
     - openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#PATCH /binders/{binderId}/documents/{documentId}
     - openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#POST /binders/{binderId}/documents
-  signer:
+  recipient:
     path_segment:
     - parties
     properties:

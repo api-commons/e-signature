@@ -23,7 +23,7 @@ concepts:
     - openapi/_original/documenso-openapi.yml#GET /documents
     - openapi/_original/documenso-openapi.yml#GET /documents/{id}
     - openapi/_original/documenso-openapi.yml#POST /documents
-  signer:
+  recipient:
     path_segment:
     - recipients
     properties:
@@ -60,7 +60,7 @@ concepts:
       id:
       - id
       - documentId
-      signer_id: recipientId
+      recipient_id: recipientId
       width: width
       height: height
     core_coverage: 0.6
