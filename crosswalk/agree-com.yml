@@ -15,7 +15,7 @@ concepts:
       - recipients
       template_id: template_id
       version: version
-    core_coverage: 0.6
+    core_coverage: 0.667
     evidence:
     - openapi/_original/agree-com-api-openapi-original.json#DELETE /api/v1/agreements/{id}
     - openapi/_original/agree-com-api-openapi-original.json#GET /api/v1/agreements
@@ -28,7 +28,7 @@ concepts:
     properties:
       id: id
       name: name
-    core_coverage: 0.667
+    core_coverage: 0.5
     evidence:
     - openapi/_original/agree-com-api-openapi-original.json#GET /api/v1/agreements/templates
     - openapi/_original/agree-com-api-openapi-original.json#GET /api/v1/agreements/templates/{id}

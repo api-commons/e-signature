@@ -30,13 +30,13 @@ concepts:
     path_segment:
     - recipients
     properties:
-      email: email
       id: id
+      email: email
       role: role
       order: signing_order
       first_name: first_name
       last_name: last_name
-    core_coverage: 0.5
+    core_coverage: 0.6
     evidence:
     - openapi/_original/pandadoc-rest-api-openapi.yml#DELETE /documents/{id}/recipients/{recipient_id}
     - openapi/_original/pandadoc-rest-api-openapi.yml#GET /documents/{id}/recipients

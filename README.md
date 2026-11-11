@@ -12,10 +12,10 @@ generated. Every number below is a count of providers.
 <!-- commons:summary -->
 | Concept | Expose it | Readable schema | Core properties (share) | Collection named |
 | --- | ---: | ---: | --- | --- |
-| envelope | 35 | 30 | id 93%, name 77%, status 73%, created_at 70%, metadata 50% | documents 26, envelopes 5, submissions 4, envelope 4 |
-| recipient | 16 | 15 | email 80%, id 80%, status 60%, name 53% | recipients 9, signers 5, submitters 1, recipient 1 |
-| template | 25 | 22 | id 96%, name 82%, created_at 59% | templates 22, template 6 |
-| signature_field | 14 | 12 | type 83%, id 67%, name 67%, required 58%, recipient_id 50% | fields 14, tabs 1 |
+| envelope | 35 | 30 | id 93%, name 80%, status 77%, created_at 70%, metadata 50%, signers 50% | documents 26, envelopes 5, submissions 4, envelope 4 |
+| recipient | 16 | 15 | id 87%, email 80%, status 60%, name 53%, role 53% | recipients 9, signers 5, submitters 1, recipient 1 |
+| template | 25 | 22 | id 100%, name 91%, created_at 68%, updated_at 50% | templates 22, template 6 |
+| signature_field | 14 | 12 | type 92%, id 67%, name 67%, required 67%, recipient_id 50% | fields 14, tabs 1 |
 
 Cohort: 72 providers with harvested OpenAPI, 35 crosswalks. Of the providers exposing a envelope: 74% create, 80% list, 77% fetch, 43% update, 71% delete. Generated 2026-11-10 by build.py.
 <!-- /commons:summary -->
@@ -27,7 +27,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 
 - A recipient agrees on email, name, role and status -- the routing information every signing flow needs -- across DocuSign, Dropbox Sign, PandaDoc, Documenso and the rest.
 - Signature fields agree on type, name and whether they are required, so a field layout maps between products even where the documents do not.
-- The envelope itself agrees only on id, name, status and created_at: what it carries (documents, signers, expiry) is modelled differently by every provider.
+- The envelope agrees on id, name, status, created_at and its signers; what else it carries (documents, expiry) is modelled differently by every provider.
 
 ## Artifacts
 

@@ -9,14 +9,14 @@ concepts:
     properties:
       id: id
       status:
-      - status
       - state
+      - status
       metadata: metadata
       template_id: template_id
       expires_at: expires_at
       source: source
       version: version
-    core_coverage: 0.6
+    core_coverage: 0.5
     evidence:
     - openapi/_original/docspring-docspring-api-openapi.yml#DELETE /submissions/{submission_id}
     - openapi/_original/docspring-docspring-api-openapi.yml#GET /submissions
@@ -32,7 +32,7 @@ concepts:
       updated_at: updated_at
       description: description
       status: status
-    core_coverage: 0.667
+    core_coverage: 0.75
     evidence:
     - openapi/_original/docspring-docspring-api-openapi.yml#DELETE /templates/{template_id}
     - openapi/_original/docspring-docspring-api-openapi.yml#GET /templates

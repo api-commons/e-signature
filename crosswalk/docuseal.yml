@@ -17,8 +17,8 @@ concepts:
       - created_at
       - sent_at
       metadata: metadata
-      sender_id: author
       signers: submitters
+      sender_id: author
       updated_at: updated_at
       template_id:
       - template
@@ -26,6 +26,7 @@ concepts:
       fields: fields
       expires_at: expire_at
       completed_at: completed_at
+      external_id: external_id
       source: source
     core_coverage: 1.0
     evidence:
@@ -38,10 +39,10 @@ concepts:
     path_segment:
     - submitters
     properties:
-      email: email
       id:
       - id
       - uuid
+      email: email
       status: status
       name: name
       role: role

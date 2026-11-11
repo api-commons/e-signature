@@ -9,7 +9,7 @@ concepts:
     properties:
       name: name
       fields: fields
-    core_coverage: 0.2
+    core_coverage: 0.167
     evidence:
     - openapi/_original/evisort-openapi.yml#POST /documents
   signature_field:

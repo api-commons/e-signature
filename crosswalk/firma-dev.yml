@@ -22,7 +22,7 @@ concepts:
       fields: fields
       expires_at: expires_at
       content_type: content_type
-    core_coverage: 0.8
+    core_coverage: 0.833
     evidence:
     - openapi/_original/app_firma_dev_openapi.json#DELETE /signing-requests/{id}
     - openapi/_original/app_firma_dev_openapi.json#GET /signing-requests

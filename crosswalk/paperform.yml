@@ -14,7 +14,7 @@ concepts:
       created_at: created_at
       signers: signers
       source: source
-    core_coverage: 0.8
+    core_coverage: 0.833
     evidence:
     - openapi/_original/paperform-openapi.json#DELETE /forms/{slug_or_id}/submissions/{id}
     - openapi/_original/paperform-openapi.json#DELETE /submissions/{id}

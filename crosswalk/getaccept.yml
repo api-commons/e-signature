@@ -16,11 +16,12 @@ concepts:
       metadata:
       - tags
       - custom_fields
-      sender_id: sender_id
       signers: recipients
+      sender_id: sender_id
       template_id: template_id
       expires_at: expiration_date
       documents: attachments
+      external_id: external_id
     core_coverage: 1.0
     evidence:
     - openapi/_original/getaccept-openapi-original.json#DELETE /documents/{documentId}
@@ -32,8 +33,8 @@ concepts:
     path_segment:
     - recipients
     properties:
-      email: email
       id: id
+      email: email
       status: status
       name: title
       role: role
@@ -51,7 +52,7 @@ concepts:
       name: name
       created_at: created_at
       type: type
-    core_coverage: 1.0
+    core_coverage: 0.75
     evidence:
     - openapi/_original/getaccept-openapi-original.json#GET /email/templates
     - openapi/_original/getaccept-openapi-original.json#GET /email/templates/{emailTemplateId}

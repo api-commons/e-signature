@@ -24,8 +24,8 @@
     "name": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.767,
-      "x-commons-providers": 23,
+      "x-commons-share": 0.8,
+      "x-commons-providers": 24,
       "x-commons-spellings": [
         "name",
         "title",
@@ -39,11 +39,12 @@
     "status": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.733,
-      "x-commons-providers": 22,
+      "x-commons-share": 0.767,
+      "x-commons-providers": 23,
       "x-commons-spellings": [
         "status",
         "state",
+        "signingStatus",
         "EnvelopeStatus"
       ]
     },
@@ -80,6 +81,19 @@
         "custom"
       ]
     },
+    "signers": {
+      "type": "array",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "recipients",
+        "signers",
+        "roles",
+        "parties",
+        "submitters"
+      ]
+    },
     "sender_id": {
       "type": "string",
       "x-commons-tier": "extended",
@@ -92,19 +106,6 @@
         "created_by",
         "author",
         "sender_id"
-      ]
-    },
-    "signers": {
-      "type": "array",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.467,
-      "x-commons-providers": 14,
-      "x-commons-spellings": [
-        "recipients",
-        "signers",
-        "roles",
-        "parties",
-        "submitters"
       ]
     },
     "updated_at": {
@@ -189,6 +190,16 @@
       "x-commons-spellings": [
         "contentType",
         "content_type"
+      ]
+    },
+    "external_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "externalId",
+        "external_id"
       ]
     },
     "source": {

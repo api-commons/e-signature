@@ -11,11 +11,15 @@ concepts:
       id:
       - id
       - documentId
+      name: name
+      status: status
       created_at: createdOn
+      signers: signers
       sender_id: createdBy
       fields: fields
       documents: documentIds
-    core_coverage: 0.4
+      external_id: externalId
+    core_coverage: 0.833
     evidence:
     - openapi/_original/skyslope-forms-partnership-openapi.yml#DELETE /documents/{documentId}
     - openapi/_original/skyslope-forms-partnership-openapi.yml#GET /documents/{documentId}
@@ -26,8 +30,14 @@ concepts:
     path_segment:
     - templates
     properties:
-      id: templateId
-    core_coverage: 0.333
+      id:
+      - id
+      - templateId
+      name: name
+      created_at: createdDate
+      type: type
+      created_by: createdBy
+    core_coverage: 0.75
     evidence:
     - openapi/_original/skyslope-forms-partnership-openapi.yml#GET /templates
     - openapi/_original/skyslope-forms-partnership-openapi.yml#POST /files/{fileId}/templates

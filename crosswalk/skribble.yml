@@ -19,7 +19,7 @@ concepts:
       expires_at: expires_at
       documents: attachments
       content_type: content_type
-    core_coverage: 0.8
+    core_coverage: 0.667
     evidence:
     - openapi/_original/skribble-sign-v2-openapi.yml#DELETE /documents/{DOC_ID}
     - openapi/_original/skribble-sign-v2-openapi.yml#DELETE /signature-requests/{SR_ID}

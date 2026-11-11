@@ -14,7 +14,7 @@ concepts:
       created_at: created_at
       signers: recipients
       updated_at: updated_at
-    core_coverage: 0.6
+    core_coverage: 0.667
     evidence:
     - openapi/_original/pdffiller-pdffiller-api-openapi.yml#DELETE /signature_requests/{signature_request_id}
     - openapi/_original/pdffiller-pdffiller-api-openapi.yml#GET /signature_requests
@@ -24,8 +24,8 @@ concepts:
     path_segment:
     - recipients
     properties:
-      email: email
       id: id
+      email: email
       status: status
       name: name
       role: role

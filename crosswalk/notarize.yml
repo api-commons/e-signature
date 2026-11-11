@@ -10,7 +10,7 @@ concepts:
       id: id
       name: name
       created_at: date_created
-    core_coverage: 0.6
+    core_coverage: 0.5
     evidence:
     - openapi/_original/notarize-proof-business-api-specification-openapi.yml#DELETE /v1/documents/{id}
     - openapi/_original/notarize-proof-business-api-specification-openapi.yml#PATCH /v1/documents/{id}
@@ -20,8 +20,12 @@ concepts:
   template:
     path_segment:
     - templates
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      id: id
+      name: name
+      created_at: created_at
+      updated_at: updated_at
+    core_coverage: 1.0
     evidence:
     - openapi/_original/notarize-proof-business-api-specification-openapi.yml#GET /v1/templates
     - openapi/_original/notarize-proof-real-estate-api-specification-openapi.yml#GET /mortgage/v2/templates

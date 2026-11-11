@@ -14,7 +14,7 @@ concepts:
       - tags
       - metadata
       source: source
-    core_coverage: 0.8
+    core_coverage: 0.667
     evidence:
     - openapi/_original/concord-com-openapi.yml#DELETE /organizations/{organizationId}/agreements/{agreementUid}
     - openapi/_original/concord-com-openapi.yml#GET /organizations/{organizationId}/agreements/{agreementUid}
@@ -25,11 +25,13 @@ concepts:
     path_segment:
     - fields
     properties:
+      type: type
       id:
       - id
       - uuid
       name: name
-    core_coverage: 0.4
+      required: required
+    core_coverage: 0.8
     evidence:
     - openapi/_original/concord-com-openapi.yml#DELETE /organizations/{organizationId}/agreements/{agreementUid}/summary/fields/{id}
     - openapi/_original/concord-com-openapi.yml#GET /organizations/{organizationId}/agreements/{agreementUid}/summary/fields

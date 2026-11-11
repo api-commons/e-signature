@@ -272,27 +272,21 @@
      "PATCH item"
     ],
     "properties": {
-     "documents": "array",
-     "pagination_meta": "object",
-     "attachments": "array",
-     "comments": "array",
-     "company_logo_url": "string",
+     "active_task_count": "integer",
+     "comment_count": "integer",
+     "completed_task_count": "integer",
      "created_at": "string",
      "data_fields": "array",
-     "events": "array",
+     "folders": "array",
      "id": "string",
-     "language": "string",
      "ocr_status": "string",
      "owner": "object",
      "parties": "array",
      "sample": "boolean",
-     "shared": "boolean",
      "signed_at": "string",
      "signing_order_mode": "string",
-     "source_template_id": "string",
      "state": "string",
      "tags": "array",
-     "template": "object",
      "title": "string",
      "to_be_signed_by": "string",
      "type": "string",
@@ -300,6 +294,14 @@
      "version": "string",
      "visibilities": "array",
      "workspace": "object",
+     "attachments": "array",
+     "comments": "array",
+     "company_logo_url": "string",
+     "events": "array",
+     "language": "string",
+     "shared": "boolean",
+     "source_template_id": "string",
+     "template": "object",
      "attachments_signed_separately": "boolean",
      "dynamic_tables": "array",
      "message": "object"
@@ -322,32 +324,22 @@
      "POST collection"
     ],
     "properties": {
-     "submissions": "array",
-     "limit": "integer",
-     "next_cursor": "string",
-     "status": "string",
-     "submission": "object",
-     "errors": "array",
-     "data": "object",
+     "batch_id": "string",
      "data_requests": "array",
      "editable": "boolean",
-     "expires_in": "integer",
-     "field_overrides": "object",
-     "metadata": "object",
-     "password": "string",
-     "test": "boolean",
-     "version": "string",
-     "batch_id": "string",
      "error_message": "string",
      "expired": "boolean",
      "expires_at": "string",
      "id": "string",
      "json_schema_errors": "array",
+     "metadata": "object",
+     "password": "string",
      "processed_at": "string",
      "state": "string",
      "template_id": "string",
      "template_type": "string",
      "template_version": "string",
+     "test": "boolean",
      "truncated_text": "object",
      "pdf_hash": "string",
      "download_url": "string",
@@ -357,7 +349,14 @@
      "audit_trail_download_url": "string",
      "actions": "array",
      "source": "string",
-     "referrer": "string"
+     "referrer": "string",
+     "data": "object",
+     "status": "string",
+     "submission": "object",
+     "errors": "array",
+     "expires_in": "integer",
+     "field_overrides": "object",
+     "version": "string"
     },
     "evidence": [
      "openapi/_original/docspring-docspring-api-openapi.yml#DELETE /submissions/{submission_id}",
@@ -378,24 +377,27 @@
      "POST collection"
     ],
     "properties": {
-     "documents": "array",
-     "totalPages": "integer",
-     "documentId": "integer",
-     "recipients": "array",
-     "uploadUrl": "string",
-     "title": "string",
-     "externalId": "string",
-     "folderId": "string",
-     "meta": "object",
-     "formValues": "object",
      "id": "integer",
      "userId": "integer",
      "teamId": "integer",
+     "externalId": "string",
+     "folderId": "string",
+     "title": "string",
      "status": "string",
      "createdAt": "string",
      "updatedAt": "string",
      "completedAt": "string",
-     "fields": "array"
+     "recipients": "array",
+     "fields": "array",
+     "documentId": "integer",
+     "email": "string",
+     "name": "string",
+     "role": "string",
+     "signingOrder": "integer",
+     "token": "string",
+     "signingStatus": "string",
+     "readStatus": "string",
+     "sendStatus": "string"
     },
     "evidence": [
      "openapi/_original/documenso-openapi.yml#DELETE /documents/{id}",
@@ -509,7 +511,11 @@
      "folder_name": "string",
      "shared_link": "boolean",
      "author": "object",
-     "merge": "boolean"
+     "file": "string",
+     "html": "string",
+     "position": "integer",
+     "replace": "boolean",
+     "remove": "boolean"
     },
     "evidence": [
      "openapi/_original/docuseal-docuseal-api-openapi.yml#DELETE /submissions/{id}",
@@ -1316,7 +1322,14 @@
      "originalContentChecksum": "string",
      "inputs": "array",
      "pages": "array",
-     "metaData": "string"
+     "metaData": "string",
+     "type": "string",
+     "partyReference": "string",
+     "optional": "boolean",
+     "prompt": "string",
+     "position": "object",
+     "font": "object",
+     "configuration": "object"
     },
     "evidence": [
      "openapi/_original/rocket-lawyer-rocketdocument-api-openapi.yml#GET /documents/{documentId}",
@@ -1414,12 +1427,6 @@
      "POST collection"
     ],
     "properties": {
-     "documents": "array",
-     "current_page": "integer",
-     "next_page": "integer",
-     "previous_page": "integer",
-     "total_count": "integer",
-     "total_pages": "integer",
      "test_mode": "boolean",
      "id": "string",
      "api_application_id": "string",
@@ -1463,7 +1470,13 @@
      "text_tags": "boolean",
      "exclude_placeholders": "array",
      "template_fields": "array",
-     "user_id": "string"
+     "user_id": "string",
+     "documents": "array",
+     "current_page": "integer",
+     "next_page": "integer",
+     "previous_page": "integer",
+     "total_count": "integer",
+     "total_pages": "integer"
     },
     "evidence": [
      "openapi/_original/signwell-signwell-api-openapi.yml#DELETE /api/v1/documents/{id}",
@@ -1588,11 +1601,14 @@
      "fields": "array",
      "documentId": "number",
      "didAddendumsChange": "boolean",
-     "totalRecords": "number",
-     "documents": "array",
      "documentIds": "array",
      "formIds": "array",
-     "envelopes": "array",
+     "name": "string",
+     "status": "string",
+     "isDeleted": "boolean",
+     "externalId": "string",
+     "dateSent": "string",
+     "signers": "array",
      "envelope": "object",
      "envelopeName": "string"
     },
@@ -1703,10 +1719,6 @@
      "POST collection"
     ],
     "properties": {
-     "offset": "integer",
-     "total_count": "integer",
-     "limit": "integer",
-     "documents": "array",
      "document_id": "string",
      "document_name": "string",
      "document_type": "string",
@@ -1761,7 +1773,10 @@
      "general_reminder": "object",
      "unmapped_documents": "array",
      "general_expiration_days": "integer",
-     "allowed_unmapped_sign_documents": "array"
+     "allowed_unmapped_sign_documents": "array",
+     "id": "string",
+     "role": "string",
+     "action": "string"
     },
     "evidence": [
      "openapi/_original/airslate-openapi.json#GET /v2/document-group-templates/{doc_group_template_id}/recipients",
@@ -2085,10 +2100,11 @@
     "properties": {
      "id": "integer",
      "name": "string",
-     "country_code": "string",
-     "identification_number": "string",
-     "type": "string",
-     "participants": "array"
+     "email": "string",
+     "phone_number": "string",
+     "signatory": "boolean",
+     "delivery_channel": "string",
+     "_permissions": "object"
     },
     "evidence": [
      "openapi/_original/oneflow-openapi.yml#DELETE /contracts/{contract_id}/parties/{party_id}",
@@ -2454,8 +2470,14 @@
      "POST collection"
     ],
     "properties": {
-     "document_group_templates": "array",
-     "document_group_template_total_count": "integer",
+     "folder_id": "null",
+     "templates": "array",
+     "is_prepared": "boolean",
+     "owner_email": "string",
+     "last_updated": "string",
+     "routing_details": "object",
+     "template_group_id": "string",
+     "template_group_name": "string",
      "id": "string",
      "document_id": "string",
      "template_id": "string",
@@ -2830,7 +2852,8 @@
       "object",
       "null"
      ],
-     "versions": "array"
+     "published_at": "string",
+     "published_by_id": "string"
     },
     "evidence": [
      "openapi/_original/docspring-docspring-api-openapi.yml#DELETE /templates/{template_id}",
@@ -3386,8 +3409,11 @@
      "GET collection"
     ],
     "properties": {
-     "templates": "array",
-     "total_count": "integer"
+     "id": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "permalink": "string",
+     "name": "string"
     },
     "evidence": [
      "openapi/_original/notarize-proof-business-api-specification-openapi.yml#GET /v1/templates",
@@ -3603,8 +3629,20 @@
      "POST collection"
     ],
     "properties": {
-     "totalRecords": "number",
-     "files": "array",
+     "id": "number",
+     "ownedBy": "string",
+     "createdDate": "string",
+     "createdBy": "string",
+     "lastUpdated": "string",
+     "updatedBy": "string",
+     "name": "string",
+     "type": "string",
+     "representationType": "string",
+     "documentCount": "number",
+     "brokerTemplateStatus": "string",
+     "brokerTemplateStatusUpdatedOn": "string",
+     "accountGroups": "array",
+     "regions": "array",
      "fileId": "integer",
      "templateId": "integer"
     },
@@ -3739,12 +3777,16 @@
      "id": "integer",
      "name": "string",
      "value": "string",
-     "agreementUid": null,
-     "fields": "array",
-     "version": "integer",
      "values": "array",
      "organizationFieldItem": "object",
-     "uuid": "string"
+     "uuid": "string",
+     "required": "boolean",
+     "type": "string",
+     "placeholder": "string",
+     "reservation": "object",
+     "options": "array",
+     "locked": "boolean",
+     "version": "integer"
     },
     "evidence": [
      "openapi/_original/concord-com-openapi.yml#DELETE /organizations/{organizationId}/agreements/{agreementUid}/summary/fields/{id}",
@@ -5008,7 +5050,8 @@
    ],
    "other": [
     "conga",
-    "lendkey"
+    "lendkey",
+    "oneflow"
    ]
   }
  }

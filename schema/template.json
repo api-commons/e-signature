@@ -8,8 +8,8 @@
     "id": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.955,
-      "x-commons-providers": 21,
+      "x-commons-share": 1.0,
+      "x-commons-providers": 22,
       "x-commons-spellings": [
         "id",
         "templateId",
@@ -23,8 +23,8 @@
     "name": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.818,
-      "x-commons-providers": 18,
+      "x-commons-share": 0.909,
+      "x-commons-providers": 20,
       "x-commons-spellings": [
         "name",
         "title",
@@ -37,12 +37,12 @@
     "created_at": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.591,
-      "x-commons-providers": 13,
+      "x-commons-share": 0.682,
+      "x-commons-providers": 15,
       "x-commons-spellings": [
         "created_at",
-        "createdAt",
         "createdDate",
+        "createdAt",
         "created",
         "createdDateTime",
         "created_date",
@@ -53,9 +53,9 @@
     },
     "updated_at": {
       "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.455,
-      "x-commons-providers": 10,
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 11,
       "x-commons-spellings": [
         "updated_at",
         "lastModified",
@@ -79,8 +79,8 @@
     "type": {
       "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.318,
-      "x-commons-providers": 7,
+      "x-commons-share": 0.364,
+      "x-commons-providers": 8,
       "x-commons-spellings": [
         "type"
       ]
@@ -93,6 +93,16 @@
       "x-commons-spellings": [
         "status",
         "document_status"
+      ]
+    },
+    "created_by": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.227,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "createdBy",
+        "created_by"
       ]
     }
   },

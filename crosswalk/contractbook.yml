@@ -12,8 +12,8 @@ concepts:
       status: state
       created_at: created_at
       metadata: tags
-      sender_id: owner
       signers: parties
+      sender_id: owner
       updated_at: updated_at
       template_id: template
       documents: attachments

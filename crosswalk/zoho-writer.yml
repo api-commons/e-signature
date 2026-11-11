@@ -11,7 +11,7 @@ concepts:
       status: status
       sender_id: created_by
       version: version
-    core_coverage: 0.4
+    core_coverage: 0.333
     evidence:
     - openapi/_original/zoho-writer-openapi.json#GET /documents
     - openapi/_original/zoho-writer-openapi.json#GET /documents/{document_id}

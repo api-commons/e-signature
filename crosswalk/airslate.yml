@@ -11,13 +11,13 @@ concepts:
       status: status
       created_at: created
       metadata: tags
-      sender_id: owner
       signers: roles
+      sender_id: owner
       updated_at: updated
       template_id: template
       fields: fields
       documents: attachments
-    core_coverage: 0.8
+    core_coverage: 0.833
     evidence:
     - openapi/_original/airslate-openapi.json#GET /user/documents
     - openapi/_original/airslate-openapi.json#GET /v2/document-groups/{document_group_id}/free-form-invites/{dg_freeform_invite_id}/documents
@@ -25,8 +25,10 @@ concepts:
   recipient:
     path_segment:
     - recipients
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      id: id
+      role: role
+    core_coverage: 0.4
     evidence:
     - openapi/_original/airslate-openapi.json#GET /v2/document-group-templates/{doc_group_template_id}/recipients
     - openapi/_original/airslate-openapi.json#GET /v2/document-groups/{document_group_id}/recipients
@@ -41,7 +43,7 @@ concepts:
       - id
       - document_id
       - template_id
-    core_coverage: 0.333
+    core_coverage: 0.25
     evidence:
     - openapi/_original/airslate-openapi.json#GET /team/{team_id}/documentgroup/templates
     - openapi/_original/airslate-openapi.json#GET /user/documentgroup/templates

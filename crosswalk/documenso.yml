@@ -8,16 +8,21 @@ concepts:
     - documents
     properties:
       id:
-      - documentId
       - id
-      name: title
-      status: status
+      - documentId
+      name:
+      - title
+      - name
+      status:
+      - status
+      - signingStatus
       created_at: createdAt
       signers: recipients
       updated_at: updatedAt
       fields: fields
       completed_at: completedAt
-    core_coverage: 0.8
+      external_id: externalId
+    core_coverage: 0.833
     evidence:
     - openapi/_original/documenso-openapi.yml#DELETE /documents/{id}
     - openapi/_original/documenso-openapi.yml#GET /documents
@@ -27,10 +32,10 @@ concepts:
     path_segment:
     - recipients
     properties:
-      email: email
       id:
       - id
       - documentId
+      email: email
       status: signingStatus
       name: name
       role: role
@@ -46,7 +51,7 @@ concepts:
     properties:
       id: templateId
       name: title
-    core_coverage: 0.667
+    core_coverage: 0.5
     evidence:
     - openapi/_original/documenso-openapi.yml#DELETE /templates/{id}
     - openapi/_original/documenso-openapi.yml#GET /templates

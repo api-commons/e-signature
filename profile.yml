@@ -90,8 +90,8 @@ concepts:
       - Id
     - name: name
       tier: core
-      providers: 23
-      share: 0.767
+      providers: 24
+      share: 0.8
       type: string
       spellings:
       - name
@@ -103,12 +103,13 @@ concepts:
       - subject
     - name: status
       tier: core
-      providers: 22
-      share: 0.733
+      providers: 23
+      share: 0.767
       type: string
       spellings:
       - status
       - state
+      - signingStatus
       - EnvelopeStatus
     - name: created_at
       tier: core
@@ -138,6 +139,17 @@ concepts:
       - MetaData
       - metaData
       - custom
+    - name: signers
+      tier: core
+      providers: 15
+      share: 0.5
+      type: array
+      spellings:
+      - recipients
+      - signers
+      - roles
+      - parties
+      - submitters
     - name: sender_id
       tier: extended
       providers: 14
@@ -150,17 +162,6 @@ concepts:
       - created_by
       - author
       - sender_id
-    - name: signers
-      tier: extended
-      providers: 14
-      share: 0.467
-      type: array
-      spellings:
-      - recipients
-      - signers
-      - roles
-      - parties
-      - submitters
     - name: updated_at
       tier: extended
       providers: 13
@@ -228,6 +229,14 @@ concepts:
       spellings:
       - contentType
       - content_type
+    - name: external_id
+      tier: extended
+      providers: 6
+      share: 0.2
+      type: string
+      spellings:
+      - externalId
+      - external_id
     - name: source
       tier: extended
       providers: 6
@@ -242,13 +251,12 @@ concepts:
       type: string
       spellings:
       - version
-    long_tail_count: 553
+    long_tail_count: 565
     long_tail_sample:
     - description
-    - external_id
     - page_count
-    - folder_id
     - type
+    - folder_id
     - user_id
     - document
     - document_name
@@ -258,10 +266,10 @@ concepts:
     - file_size
     - is_signed
     - language
-    - limit
     - notification
     - parent_id
     - preview_url
+    - role
     - size
     - updated_by
     - allow_reassign
@@ -271,18 +279,19 @@ concepts:
     - deleted_at
     - delivery_mode
     - document_type
+    - email
     - error_message
+    - file
     - folder
     - form_id
-    - next_cursor
     - order
     - original_filename
     - owner_id
     - pages
     - password
     - permissions
+    - position
     - reminders
-    - role
     - sent_date
   recipient:
     segments_seen:
@@ -324,18 +333,10 @@ concepts:
       share: 0.062
       tier: long-tail
     properties:
-    - name: email
-      tier: core
-      providers: 12
-      share: 0.8
-      type: string
-      spellings:
-      - email
-      - email_address
     - name: id
       tier: core
-      providers: 12
-      share: 0.8
+      providers: 13
+      share: 0.867
       type: string
       spellings:
       - id
@@ -344,6 +345,14 @@ concepts:
       - uuid
       - recipientId
       - ID
+    - name: email
+      tier: core
+      providers: 12
+      share: 0.8
+      type: string
+      spellings:
+      - email
+      - email_address
     - name: status
       tier: core
       providers: 9
@@ -362,9 +371,9 @@ concepts:
       - subject
       - title
     - name: role
-      tier: extended
-      providers: 7
-      share: 0.467
+      tier: core
+      providers: 8
+      share: 0.533
       type: string
       spellings:
       - role
@@ -436,13 +445,14 @@ concepts:
       type: string
       spellings:
       - updated_at
-    long_tail_count: 158
+    long_tail_count: 159
     long_tail_sample:
     - authentication
     - company_name
     - mobile
     - phone
     - user_id
+    - action
     - addons
     - agents
     - allow_decline
@@ -477,7 +487,6 @@ concepts:
     - delegates
     - delivery_mode
     - description
-    - document_signature
   template:
     segments_seen:
       templates: 22
@@ -516,8 +525,8 @@ concepts:
     properties:
     - name: id
       tier: core
-      providers: 21
-      share: 0.955
+      providers: 22
+      share: 1.0
       type: string
       spellings:
       - id
@@ -529,8 +538,8 @@ concepts:
       - Id
     - name: name
       tier: core
-      providers: 18
-      share: 0.818
+      providers: 20
+      share: 0.909
       type: string
       spellings:
       - name
@@ -541,22 +550,22 @@ concepts:
       - Name
     - name: created_at
       tier: core
-      providers: 13
-      share: 0.591
+      providers: 15
+      share: 0.682
       type: string
       spellings:
       - created_at
-      - createdAt
       - createdDate
+      - createdAt
       - created
       - createdDateTime
       - created_date
       - CreationDate
       - date_created
     - name: updated_at
-      tier: extended
-      providers: 10
-      share: 0.455
+      tier: core
+      providers: 11
+      share: 0.5
       type: string
       spellings:
       - updated_at
@@ -575,8 +584,8 @@ concepts:
       - emailBlurb
     - name: type
       tier: extended
-      providers: 7
-      share: 0.318
+      providers: 8
+      share: 0.364
       type: string
       spellings:
       - type
@@ -588,33 +597,42 @@ concepts:
       spellings:
       - status
       - document_status
-    long_tail_count: 316
+    - name: created_by
+      tier: extended
+      providers: 5
+      share: 0.227
+      type: string
+      spellings:
+      - createdBy
+      - created_by
+    long_tail_count: 327
     long_tail_sample:
-    - created_by
+    - folder_id
     - metadata
     - page_count
     - roles
-    - documents
     - external_id
     - fields
-    - folder_id
     - source
+    - updated_by
     - archived
     - attachments
     - document
     - document_url
+    - documents
     - file
     - folder_name
     - language
+    - last_updated
     - owner
     - preferences
     - slug
     - template_type
-    - updated_by
     - accepted_at
     - accepted_by_contact
     - accepted_by_user
     - accepted_schedule_id
+    - account_groups
     - active_version_comments
     - active_version_id
     - active_version_name
@@ -629,7 +647,6 @@ concepts:
     - amount
     - amount_formatted
     - archived_at
-    - asynchronous
   signature_field:
     segments_seen:
       fields: 14
@@ -672,8 +689,8 @@ concepts:
     properties:
     - name: type
       tier: core
-      providers: 10
-      share: 0.833
+      providers: 11
+      share: 0.917
       type: string
       spellings:
       - type
@@ -705,8 +722,8 @@ concepts:
       - title
     - name: required
       tier: core
-      providers: 7
-      share: 0.583
+      providers: 8
+      share: 0.667
       type: boolean
       spellings:
       - required
@@ -744,10 +761,10 @@ concepts:
       type: number
       spellings:
       - height
-    long_tail_count: 168
+    long_tail_count: 170
     long_tail_sample:
     - page
-    - agreement_uid
+    - placeholder
     - alias_field_definition
     - allow_tab_order
     - allow_tab_order_metadata

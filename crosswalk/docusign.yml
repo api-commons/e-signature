@@ -22,10 +22,10 @@ concepts:
       metadata:
       - metadata
       - customFields
+      signers: recipients
       sender_id:
       - sender
       - owner
-      signers: recipients
       updated_at: statusChangedDateTime
       template_id: templateId
       documents:
@@ -45,9 +45,9 @@ concepts:
     - recipients
     - recipient
     properties:
-      email: email
       id: recipientId
-    core_coverage: 0.5
+      email: email
+    core_coverage: 0.4
     evidence:
     - openapi/_original/docusign-esignature-openapi.yml#DELETE /accounts/{accountId}/envelopes/{envelopeId}/recipients
     - openapi/_original/docusign-esignature-openapi.yml#GET /accounts/{accountId}/envelopes/{envelopeId}/recipients

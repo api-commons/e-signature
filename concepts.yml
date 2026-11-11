@@ -71,8 +71,8 @@ findings:
     flow needs -- across DocuSign, Dropbox Sign, PandaDoc, Documenso and the rest."
   - "Signature fields agree on type, name and whether they are required, so a field layout
     maps between products even where the documents do not."
-  - "The envelope itself agrees only on id, name, status and created_at: what it carries
-    (documents, signers, expiry) is modelled differently by every provider."
+  - "The envelope agrees on id, name, status, created_at and its signers; what else it
+    carries (documents, expiry) is modelled differently by every provider."
 decisions:
   - "The cohort is the e-signature and contract-management tags only. With Document
     Management in it, `/documents` brought in database and editor documents."

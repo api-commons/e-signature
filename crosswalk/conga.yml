@@ -17,7 +17,7 @@ concepts:
       fields: fields
       content_type: contentType
       version: version
-    core_coverage: 0.6
+    core_coverage: 0.5
     evidence:
     - openapi/_original/conga-conga-sign.json#DELETE /v1/cs-packages/{packageId}/documents
     - openapi/_original/conga-conga-sign.json#DELETE /v1/cs-packages/{packageId}/documents/{documentId}
@@ -36,6 +36,7 @@ concepts:
       updated_at: lastModified
       description: description
       type: type
+      created_by: createdBy
     core_coverage: 1.0
     evidence:
     - openapi/_original/conga-contracts.json#GET /api/clm/v1/import/templates/{format}

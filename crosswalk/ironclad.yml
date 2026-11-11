@@ -22,7 +22,7 @@ concepts:
       - roleName
       - type
       order: routingOrder
-    core_coverage: 0.75
+    core_coverage: 0.8
     evidence:
     - openapi/_original/ironclad-public-api-openapi.yml#DELETE /workflows/{id}/sign-status/signers/{signerRoleName}
     - openapi/_original/ironclad-public-api-openapi.yml#PATCH /workflows/{id}/sign-status/signers/{signerRoleName}

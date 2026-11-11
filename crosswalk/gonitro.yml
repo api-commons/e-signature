@@ -11,7 +11,7 @@ concepts:
       name: name
       status: status
       created_at: createdAt
-    core_coverage: 0.8
+    core_coverage: 0.667
     evidence:
     - openapi/_original/gonitro-sign-openapi.json#DELETE /sign/envelopes/{envelopeID}
     - openapi/_original/gonitro-sign-openapi.json#GET /sign/envelopes
@@ -22,10 +22,10 @@ concepts:
     path_segment:
     - participants
     properties:
-      email: email
       id: ID
+      email: email
       role: role
-    core_coverage: 0.5
+    core_coverage: 0.6
     evidence:
     - openapi/_original/gonitro-sign-openapi.json#DELETE /sign/envelopes/{envelopeID}/participants/{participantID}
     - openapi/_original/gonitro-sign-openapi.json#GET /sign/envelopes/{envelopeID}/participants

@@ -34,8 +34,8 @@ concepts:
     path_segment:
     - recipients
     properties:
-      email: email
       id: id
+      email: email
       status: status
       name:
       - name
@@ -46,6 +46,6 @@ concepts:
       created_at: created_at
       fields: fields
       updated_at: updated_at
-    core_coverage: 1.0
+    core_coverage: 0.8
     evidence:
     - openapi/_original/signwell-signwell-api-openapi.yml#PATCH /api/v1/documents/{id}/recipients
