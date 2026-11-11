@@ -1,0 +1,25 @@
+provider: sadq-holding-limited
+apis_io: https://apis.io/providers/sadq-holding-limited/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - envelope
+    - documents
+    - signature-requests
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/sadq-holding-limited-openapi-original.json#GET /api/v1/documents/{id}
+    - openapi/_original/sadq-holding-limited-openapi-original.json#POST /api/v1/invitations/envelope
+    - openapi/_original/sadq-holding-limited-openapi-original.json#POST /api/v1/signature-requests/bulk
+  template:
+    path_segment:
+    - templates
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/sadq-holding-limited-openapi-original.json#GET /api/v1/templates
+    - openapi/_original/sadq-holding-limited-openapi-original.json#GET /api/v1/templates/{templateId}
+    - openapi/_original/sadq-holding-limited-openapi-original.json#POST /api/v1/signature-requests/bulk/templates

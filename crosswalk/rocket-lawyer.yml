@@ -1,0 +1,44 @@
+provider: rocket-lawyer
+apis_io: https://apis.io/providers/rocket-lawyer/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - documents
+    properties:
+      id: id
+      name: name
+      metadata: metaData
+      content_type: contentType
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/rocket-lawyer-rocketdocument-api-openapi.yml#GET /documents/{documentId}
+    - openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#DELETE /binders/{binderId}/documents/{documentId}
+    - openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#GET /binders/{binderId}/documents/{documentId}
+    - openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#PATCH /binders/{binderId}/documents/{documentId}
+    - openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#POST /binders/{binderId}/documents
+  signer:
+    path_segment:
+    - parties
+    properties:
+      email: email
+      id: id
+      status: status
+      metadata: metaData
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#DELETE /binders/{binderId}/parties/{partyId}
+    - openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#GET /binders/{binderId}/parties
+    - openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#PATCH /binders/{binderId}/parties/{partyId}
+    - openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#POST /binders/{binderId}/parties
+  template:
+    path_segment:
+    - templates
+    properties:
+      id: templateId
+      type: type
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/rocket-lawyer-rocketdocument-api-openapi.yml#GET /templates
+    - openapi/_original/rocket-lawyer-rocketdocument-api-openapi.yml#GET /templates/{templateId}

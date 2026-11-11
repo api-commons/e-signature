@@ -1,0 +1,38 @@
+provider: concord-com
+apis_io: https://apis.io/providers/concord-com/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - agreements
+    properties:
+      id: id
+      name: title
+      status: status
+      metadata:
+      - tags
+      - metadata
+      source: source
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/concord-com-openapi.yml#DELETE /organizations/{organizationId}/agreements/{agreementUid}
+    - openapi/_original/concord-com-openapi.yml#GET /organizations/{organizationId}/agreements/{agreementUid}
+    - openapi/_original/concord-com-openapi.yml#GET /organizations/{organizationId}/folders/{folderId}/agreements
+    - openapi/_original/concord-com-openapi.yml#GET /user/me/organizations/{organizationId}/agreements
+    - openapi/_original/concord-com-openapi.yml#PATCH /organizations/{organizationId}/agreements/{agreementUid}
+  signature_field:
+    path_segment:
+    - fields
+    properties:
+      id:
+      - id
+      - uuid
+      name: name
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/concord-com-openapi.yml#DELETE /organizations/{organizationId}/agreements/{agreementUid}/summary/fields/{id}
+    - openapi/_original/concord-com-openapi.yml#GET /organizations/{organizationId}/agreements/{agreementUid}/summary/fields
+    - openapi/_original/concord-com-openapi.yml#GET /organizations/{organizationId}/agreements/{agreementUid}/versions/last/fields
+    - openapi/_original/concord-com-openapi.yml#PATCH /organizations/{organizationId}/agreements/{agreementUid}/summary/fields/{id}
+    - openapi/_original/concord-com-openapi.yml#PATCH /organizations/{organizationId}/agreements/{agreementUid}/versions/last/fields

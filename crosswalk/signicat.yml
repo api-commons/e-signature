@@ -1,0 +1,44 @@
+provider: signicat
+apis_io: https://apis.io/providers/signicat/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - documents
+    properties:
+      id:
+      - id
+      - documentId
+      name:
+      - name
+      - title
+      status: status
+      created_at: createdAt
+      metadata: metadata
+      signers: signers
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/data-verification-openapi.json#GET /organizations/documents
+    - openapi/_original/sign-openapi.json#DELETE /documents/{documentId}
+    - openapi/_original/sign-openapi.json#GET /documents/{documentId}
+    - openapi/_original/sign-openapi.json#POST /documents
+    - openapi/_original/signicat-data-verification-openapi.yml#GET /organizations/documents
+  signer:
+    path_segment:
+    - signers
+    - recipients
+    properties:
+      email: email
+      id: id
+      order: order
+      metadata: tags
+      first_name: firstName
+      last_name: lastName
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/secure-share-openapi.json#DELETE /shares/{shareId}/recipients/{recipientId}
+    - openapi/_original/secure-share-openapi.json#GET /shares/{shareId}/recipients/{recipientId}
+    - openapi/_original/secure-share-openapi.json#PATCH /shares/{shareId}/recipients/{recipientId}
+    - openapi/_original/secure-share-openapi.json#POST /shares/{shareId}/recipients
+    - openapi/_original/signicat-secure-share-openapi.yml#DELETE /shares/{shareId}/recipients/{recipientId}

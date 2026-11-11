@@ -1,0 +1,41 @@
+provider: docspring
+apis_io: https://apis.io/providers/docspring/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - submissions
+    properties:
+      id: id
+      status:
+      - status
+      - state
+      metadata: metadata
+      template_id: template_id
+      expires_at: expires_at
+      source: source
+      version: version
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/docspring-docspring-api-openapi.yml#DELETE /submissions/{submission_id}
+    - openapi/_original/docspring-docspring-api-openapi.yml#GET /submissions
+    - openapi/_original/docspring-docspring-api-openapi.yml#GET /submissions/{submission_id}
+    - openapi/_original/docspring-docspring-api-openapi.yml#GET /templates/{template_id}/submissions
+    - openapi/_original/docspring-docspring-api-openapi.yml#POST /templates/{template_id}/submissions
+  template:
+    path_segment:
+    - templates
+    properties:
+      id: id
+      name: name
+      updated_at: updated_at
+      description: description
+      status: status
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/docspring-docspring-api-openapi.yml#DELETE /templates/{template_id}
+    - openapi/_original/docspring-docspring-api-openapi.yml#GET /templates
+    - openapi/_original/docspring-docspring-api-openapi.yml#GET /templates/{template_id}
+    - openapi/_original/docspring-docspring-api-openapi.yml#POST /templates
+    - openapi/_original/docspring-docspring-api-openapi.yml#PUT /templates/{template_id}

@@ -1,0 +1,74 @@
+provider: yousign
+apis_io: https://apis.io/providers/yousign/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - signature_requests
+    - documents
+    properties:
+      id: id
+      name: name
+      status: status
+      created_at: created_at
+      metadata: labels
+      sender_id: sender
+      signers: signers
+      template_id: template_id
+      expires_at: expiration_date
+      completed_at: completed_at
+      content_type: content_type
+      source: source
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/yousign-public-api-v3-openapi.yml#DELETE /signature_requests/{signatureRequestId}
+    - openapi/_original/yousign-public-api-v3-openapi.yml#GET /signature_requests
+    - openapi/_original/yousign-public-api-v3-openapi.yml#GET /signature_requests/{signatureRequestId}
+    - openapi/_original/yousign-public-api-v3-openapi.yml#PATCH /signature_requests/{signatureRequestId}
+    - openapi/_original/yousign-public-api-v3-openapi.yml#POST /documents
+  signer:
+    path_segment:
+    - signers
+    properties:
+      id: id
+      status: status
+      name: title
+      fields: fields
+      signed_at: signed_at
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/yousign-public-api-v3-openapi.yml#DELETE /signature_requests/{signatureRequestId}/consent_requests/{consentRequestId}/signers/{signerId}
+    - openapi/_original/yousign-public-api-v3-openapi.yml#DELETE /signature_requests/{signatureRequestId}/document_requests/{documentRequestId}/signers/{signerId}
+    - openapi/_original/yousign-public-api-v3-openapi.yml#DELETE /signature_requests/{signatureRequestId}/signers/{signerId}
+    - openapi/_original/yousign-public-api-v3-openapi.yml#GET /signature_requests/{signatureRequestId}/signers
+    - openapi/_original/yousign-public-api-v3-openapi.yml#GET /signature_requests/{signatureRequestId}/signers/{signerId}
+  template:
+    path_segment:
+    - templates
+    properties:
+      id: id
+      name: name
+      created_at: created_at
+      description: description
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/yousign-public-api-v3-openapi.yml#GET /templates
+  signature_field:
+    path_segment:
+    - fields
+    properties:
+      type: type
+      id:
+      - id
+      - document_id
+      signer_id: signer_id
+      width: width
+      height: height
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/yousign-public-api-v3-openapi.yml#DELETE /signature_requests/{signatureRequestId}/documents/{documentId}/fields/{fieldId}
+    - openapi/_original/yousign-public-api-v3-openapi.yml#GET /signature_requests/{signatureRequestId}/documents/{documentId}/fields
+    - openapi/_original/yousign-public-api-v3-openapi.yml#PATCH /signature_requests/{signatureRequestId}/documents/{documentId}/fields/{fieldId}
+    - openapi/_original/yousign-public-api-v3-openapi.yml#POST /signature_requests/{signatureRequestId}/documents/{documentId}/fields

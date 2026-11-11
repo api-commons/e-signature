@@ -1,0 +1,28 @@
+provider: signaturely
+apis_io: https://apis.io/providers/signaturely/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - documents
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/signaturely-openapi.yml#DELETE /documents
+    - openapi/_original/signaturely-openapi.yml#GET /documents
+  signer:
+    path_segment:
+    - signers
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/signaturely-openapi.yml#GET /documents/{documentId}/signers
+  template:
+    path_segment:
+    - templates
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/signaturely-openapi.yml#DELETE /documents/api/templates
+    - openapi/_original/signaturely-openapi.yml#GET /documents/api/templates

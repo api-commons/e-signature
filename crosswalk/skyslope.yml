@@ -1,0 +1,33 @@
+provider: skyslope
+apis_io: https://apis.io/providers/skyslope/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - documents
+    - envelopes
+    properties:
+      id:
+      - id
+      - documentId
+      created_at: createdOn
+      sender_id: createdBy
+      fields: fields
+      documents: documentIds
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/skyslope-forms-partnership-openapi.yml#DELETE /documents/{documentId}
+    - openapi/_original/skyslope-forms-partnership-openapi.yml#GET /documents/{documentId}
+    - openapi/_original/skyslope-forms-partnership-openapi.yml#GET /files/{fileId}/documents
+    - openapi/_original/skyslope-forms-partnership-openapi.yml#GET /files/{fileId}/envelopes
+    - openapi/_original/skyslope-forms-partnership-openapi.yml#PATCH /documents/{documentId}
+  template:
+    path_segment:
+    - templates
+    properties:
+      id: templateId
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/skyslope-forms-partnership-openapi.yml#GET /templates
+    - openapi/_original/skyslope-forms-partnership-openapi.yml#POST /files/{fileId}/templates

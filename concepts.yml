@@ -1,0 +1,82 @@
+context: e-signature
+name: E-Signature
+intro: >-
+  The common e-signature vocabulary -- the envelopes sent for signature, the documents in
+  them, the people who sign, the fields they fill and the templates they start from --
+  distilled from the APIs that already exist.
+tags: [E-Signature, eSignature, Electronic Signature, Digital Signature, Document Signing, E-Sign, Contract Management, CLM]
+
+envelope: [_links, _pagination, _results, data, success, errors, warnings, count, total, page, meta, links,
+           value, results, next, previous, has_more, message, status_code, ids, next_page, previous_page,
+           page_info, cursor, total_count, per_page, total_pages, current_page, object, url]
+
+common_fields:
+  id: [uuid, guid, object_id, record_id, envelope_id, document_id, request_id, signature_request_id]
+  created_at: [created, created_date, date_created, create_time, creation_date, created_on, created_date_time, sent_at]
+  updated_at: [updated, updated_date, modified_at, last_modified, date_modified, update_time, modified_date, modified, status_changed_date_time]
+  metadata: [meta_data, custom_fields, custom, attributes, properties, tags, labels]
+  status: [state, envelope_status, document_status, signing_status, request_status]
+  name: [title, display_name, label, subject, email_subject, file_name]
+  description: [message, email_message, email_blurb, notes, note]
+
+concepts:
+  envelope:
+    # The signing transaction: DocuSign's envelope, Dropbox Sign's signature request,
+    # PandaDoc's document, Documenso's document.
+    segments: [envelopes, envelope, signature_requests, signature-requests, signaturerequests, signing_requests, signing-requests, agreements, packages, transactions@sign|signing|esign, submissions, documents@sign|signing|esign|envelopes, documents]
+    aliases:
+      signers: [recipients, signatories, signers_list, parties, submitters, roles]
+      documents: [files, attachments, document_ids]
+      expires_at: [expiration_date, expiry, expires, expire_at, expiration]
+      completed_at: [completed, completed_date_time, signed_at, finished_at, completed_date]
+      sender_id: [sender, owner, created_by, author, requester_email, requester]
+      template_id: [template, template_ids]
+      signing_url: [signing_link, sign_url, url, embed_url]
+  signer:
+    requires: [envelope]
+    segments: [signers, signer, recipients, recipient, signatories, submitters,
+               "participants@envelopes|envelope|documents|document|signature_requests|signing-requests|contracts|sign",
+               "parties@envelopes|documents|contracts|binders|agreements"]
+    aliases:
+      email: [email_address, signer_email]
+      signed_at: [signed, signed_date_time, completed_at, signed_date]
+      order: [routing_order, signing_order, sort_order, order_index]
+      role: [role_name, signer_role, type]
+  template:
+    requires: [envelope]
+    segments: [templates, template]
+    aliases:
+      roles: [signer_roles, recipients, signers, placeholders]
+      documents: [files, document_ids]
+  signature_field:
+    requires: [envelope]
+    segments: [fields, field, tabs, form_fields, form-fields, annotations]
+    aliases:
+      type: [field_type, kind, tab_type]
+      page: [page_number]
+      required: [is_required, mandatory]
+      signer_id: [recipient_id, role, assigned_to, signer]
+
+exclude:
+  envelope:
+    dotfile: /cases/{id}/documents are identity-verification documents
+    hr-partner: /library/documents is an HR document library
+    hubflo: /forms/{id}/submissions are form submissions
+duplicates:
+  gonitro: [nitro-software]
+
+findings:
+  - "A signer agrees on email, name, role and status -- the routing information every signing
+    flow needs -- across DocuSign, Dropbox Sign, PandaDoc, Documenso and the rest."
+  - "Signature fields agree on type, name and whether they are required, so a field layout
+    maps between products even where the documents do not."
+  - "The envelope itself agrees only on id, name, status and created_at: what it carries
+    (documents, signers, expiry) is modelled differently by every provider."
+decisions:
+  - "The cohort is the e-signature and contract-management tags only. With Document
+    Management in it, `/documents` brought in database and editor documents."
+  - "The signing transaction is an `envelope` (`/envelopes`), though most products call it a
+    document: `/documents` is the files context's, and envelope means only one thing."
+  - "`participants` and `parties` are signers only beneath an envelope, document, contract or
+    signature request; a call's participants and a chat room's are not."
+  - "Fields are `signature_field`, DocuSign's tabs and PDF form fields included."

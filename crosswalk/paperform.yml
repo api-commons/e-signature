@@ -1,0 +1,36 @@
+provider: paperform
+apis_io: https://apis.io/providers/paperform/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - submissions
+    - documents
+    properties:
+      id: id
+      name: name
+      status: status
+      created_at: created_at
+      signers: signers
+      source: source
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/paperform-openapi.json#DELETE /forms/{slug_or_id}/submissions/{id}
+    - openapi/_original/paperform-openapi.json#DELETE /submissions/{id}
+    - openapi/_original/paperform-openapi.json#GET /forms/{slug_or_id}/submissions
+    - openapi/_original/paperform-openapi.json#GET /forms/{slug_or_id}/submissions/{id}
+    - openapi/_original/paperform-openapi.json#GET /papersign/documents
+  signature_field:
+    path_segment:
+    - fields
+    properties:
+      type: type
+      name: title
+      required: required
+      description: description
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/paperform-openapi.json#GET /forms/{slug_or_id}/fields
+    - openapi/_original/paperform-openapi.json#GET /forms/{slug_or_id}/fields/{field_key}
+    - openapi/_original/paperform-openapi.json#PUT /forms/{slug_or_id}/fields/{field_key}

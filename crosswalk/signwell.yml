@@ -1,0 +1,51 @@
+provider: signwell
+apis_io: https://apis.io/providers/signwell/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - documents
+    properties:
+      id: id
+      name:
+      - name
+      - subject
+      status: status
+      created_at: created_at
+      metadata:
+      - metadata
+      - labels
+      signers: recipients
+      updated_at: updated_at
+      template_id:
+      - template_id
+      - template_ids
+      fields: fields
+      documents: files
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/signwell-signwell-api-openapi.yml#DELETE /api/v1/documents/{id}
+    - openapi/_original/signwell-signwell-api-openapi.yml#GET /api/v1/bulk_sends/{id}/documents
+    - openapi/_original/signwell-signwell-api-openapi.yml#GET /api/v1/documents
+    - openapi/_original/signwell-signwell-api-openapi.yml#GET /api/v1/documents/{id}
+    - openapi/_original/signwell-signwell-api-openapi.yml#POST /api/v1/document_templates/documents
+  signer:
+    path_segment:
+    - recipients
+    properties:
+      email: email
+      id: id
+      status: status
+      name:
+      - name
+      - subject
+      metadata:
+      - metadata
+      - labels
+      created_at: created_at
+      fields: fields
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/signwell-signwell-api-openapi.yml#PATCH /api/v1/documents/{id}/recipients

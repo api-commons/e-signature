@@ -1,0 +1,590 @@
+[
+ {
+  "slug": "adobe",
+  "specs": [
+   "openapi/_original/adobe-cc-libraries-api-openapi.json",
+   "openapi/_original/adobe-pdf-services-api-openapi-official.json",
+   "openapi/_original/adobe-pdf-services-api-openapi.yml",
+   "openapi/_original/adobe-substance-3d-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "adobe-sign",
+  "specs": [
+   "openapi/_original/adobe-sign-openapi.yml"
+  ]
+ },
+ {
+  "slug": "agree-com",
+  "specs": [
+   "openapi/_original/agree-com-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "airslate",
+  "specs": [
+   "openapi/_original/airslate-openapi.json"
+  ]
+ },
+ {
+  "slug": "anvil",
+  "specs": [
+   "openapi/_original/anvil-pdf-filling-api-openapi.yml",
+   "openapi/_original/anvil-pdf-generation-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "boldsign",
+  "specs": [
+   "openapi/_original/boldsign-esignature-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cacheflow",
+  "specs": [
+   "openapi/_original/cacheflow-api-openapi.yml",
+   "openapi/_original/cacheflow-openapi.json"
+  ]
+ },
+ {
+  "slug": "certifaction",
+  "specs": [
+   "openapi/_original/certifaction-admin-api-openapi.yml",
+   "openapi/_original/certifaction-local-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "citrix-sharefile",
+  "specs": [
+   "openapi/_original/citrix-sharefile-openapi.yml"
+  ]
+ },
+ {
+  "slug": "concord-com",
+  "specs": [
+   "openapi/_original/concord-com-openapi.yml"
+  ]
+ },
+ {
+  "slug": "conga",
+  "specs": [
+   "openapi/_original/conga-administration.json",
+   "openapi/_original/conga-approvals.json",
+   "openapi/_original/conga-asset.json",
+   "openapi/_original/conga-audit.json",
+   "openapi/_original/conga-billing-management.json",
+   "openapi/_original/conga-cart-v1.json",
+   "openapi/_original/conga-catalog.json",
+   "openapi/_original/conga-configuration-management.json",
+   "openapi/_original/conga-conga-sign.json",
+   "openapi/_original/conga-contracts.json",
+   "openapi/_original/conga-conversion-management.json",
+   "openapi/_original/conga-data.json",
+   "openapi/_original/conga-document-management.json",
+   "openapi/_original/conga-email.json",
+   "openapi/_original/conga-esignature.json",
+   "openapi/_original/conga-extensibility.json",
+   "openapi/_original/conga-externalendpointconfiguration.json",
+   "openapi/_original/conga-file-store.json",
+   "openapi/_original/conga-incentive-administration.json",
+   "openapi/_original/conga-ingress.json",
+   "openapi/_original/conga-invoice-management.json",
+   "openapi/_original/conga-localization.json",
+   "openapi/_original/conga-order.json",
+   "openapi/_original/conga-quote.json",
+   "openapi/_original/conga-rebate-administration.json",
+   "openapi/_original/conga-review.json",
+   "openapi/_original/conga-scheduler.json",
+   "openapi/_original/conga-schema-manager.json",
+   "openapi/_original/conga-search.json",
+   "openapi/_original/conga-user-management.json",
+   "openapi/_original/conga-x-author.json"
+  ]
+ },
+ {
+  "slug": "contractbook",
+  "specs": [
+   "openapi/_original/contractbook-openapi.json"
+  ]
+ },
+ {
+  "slug": "cubist",
+  "specs": [
+   "openapi/_original/cubist-cubesigner-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "digio",
+  "specs": [
+   "openapi/_original/digio-openapi.yml"
+  ]
+ },
+ {
+  "slug": "docspring",
+  "specs": [
+   "openapi/_original/docspring-docspring-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "documenso",
+  "specs": [
+   "openapi/_original/documenso-openapi.yml"
+  ]
+ },
+ {
+  "slug": "docupilot",
+  "specs": [
+   "openapi/_original/openapi-accounts.yaml",
+   "openapi/_original/openapi-app.yaml"
+  ]
+ },
+ {
+  "slug": "docuseal",
+  "specs": [
+   "openapi/_original/docuseal-docuseal-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "docusign",
+  "specs": [
+   "openapi/_original/docusign-admin-openapi-original.yml",
+   "openapi/_original/docusign-click-openapi-original.yml",
+   "openapi/_original/docusign-esignature-openapi.yml",
+   "openapi/_original/docusign-maestro-openapi-original.yml",
+   "openapi/_original/docusign-monitor-openapi-original.yml",
+   "openapi/_original/docusign-openapi-original.yml",
+   "openapi/_original/docusign-rooms-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "dotfile",
+  "specs": [
+   "openapi/_original/dotfile-activities-openapi.yml",
+   "openapi/_original/dotfile-aml-check-openapi.yml",
+   "openapi/_original/dotfile-cases-openapi.yml",
+   "openapi/_original/dotfile-checks-openapi.yml",
+   "openapi/_original/dotfile-client-portal-openapi.yml",
+   "openapi/_original/dotfile-companies-openapi.yml",
+   "openapi/_original/dotfile-company-data-openapi.yml",
+   "openapi/_original/dotfile-company-monitoring-check-openapi.yml",
+   "openapi/_original/dotfile-custom-properties-openapi.yml",
+   "openapi/_original/dotfile-document-check-openapi.yml",
+   "openapi/_original/dotfile-ekyc-check-openapi.yml",
+   "openapi/_original/dotfile-electronic-signature-check-openapi.yml",
+   "openapi/_original/dotfile-files-openapi.yml",
+   "openapi/_original/dotfile-fraud-database-check-openapi.yml",
+   "openapi/_original/dotfile-id-document-check-openapi.yml",
+   "openapi/_original/dotfile-id-verification-check-openapi.yml",
+   "openapi/_original/dotfile-individuals-openapi.yml",
+   "openapi/_original/dotfile-notes-openapi.yml",
+   "openapi/_original/dotfile-online-reputation-check-openapi.yml",
+   "openapi/_original/dotfile-openapi.json",
+   "openapi/_original/dotfile-ping-openapi.yml",
+   "openapi/_original/dotfile-routines-openapi.yml",
+   "openapi/_original/dotfile-tables-openapi.yml",
+   "openapi/_original/dotfile-tags-openapi.yml",
+   "openapi/_original/dotfile-templates-openapi.yml",
+   "openapi/_original/dotfile-users-openapi.yml",
+   "openapi/_original/dotfile-webhooks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dotloop",
+  "specs": [
+   "openapi/_original/dotloop-openapi.yml"
+  ]
+ },
+ {
+  "slug": "evisort",
+  "specs": [
+   "openapi/_original/evisort-openapi.yml"
+  ]
+ },
+ {
+  "slug": "feathery",
+  "specs": [
+   "openapi/_original/feathery-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "firma-dev",
+  "specs": [
+   "openapi/_original/app_firma_dev_openapi.json"
+  ]
+ },
+ {
+  "slug": "formassembly",
+  "specs": [
+   "openapi/_original/formassembly-formassembly-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "formstack",
+  "specs": [
+   "openapi/_original/formstack-openapi.json"
+  ]
+ },
+ {
+  "slug": "getaccept",
+  "specs": [
+   "openapi/_original/getaccept-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "gonitro",
+  "specs": [
+   "openapi/_original/gonitro-pdf-services-openapi.json",
+   "openapi/_original/gonitro-sign-openapi.json"
+  ]
+ },
+ {
+  "slug": "hellosign",
+  "specs": [
+   "openapi/_original/hellosign-openapi-original.yaml"
+  ]
+ },
+ {
+  "slug": "hr-partner",
+  "specs": [
+   "openapi/_original/hr-partner-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hubflo",
+  "specs": [
+   "openapi/_original/hubflo-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "idnow",
+  "specs": [
+   "openapi/_original/idnow-openapi.yml"
+  ]
+ },
+ {
+  "slug": "imgauth-api-di-attestazione-opere-digitali",
+  "specs": [
+   "openapi/_original/imgauth-api-di-attestazione-opere-digitali-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "inkit",
+  "specs": [
+   "openapi/_original/inkit-document-generation-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ironclad",
+  "specs": [
+   "openapi/_original/ironclad-oauth-20-api-openapi.yml",
+   "openapi/_original/ironclad-public-api-openapi.yml",
+   "openapi/_original/ironclad-scim-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "jotform",
+  "specs": [
+   "openapi/_original/jotform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "jurisign",
+  "specs": [
+   "openapi/_original/jurisign-openapi.json"
+  ]
+ },
+ {
+  "slug": "juro",
+  "specs": [
+   "openapi/_original/juro-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lawmatics",
+  "specs": [
+   "openapi/_original/lawmatics-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lendkey",
+  "specs": [
+   "openapi/_original/lendkey-esign-openapi.yml",
+   "openapi/_original/lendkey-integration-openapi.yml",
+   "openapi/_original/lendkey-partner-integration-internal-openapi.yml",
+   "openapi/_original/lendkey-treasury-management-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lexion",
+  "specs": [
+   "openapi/_original/lexion-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lone-wolf",
+  "specs": [
+   "openapi/_original/lone-wolf-back-office-online-api-openapi.yml",
+   "openapi/_original/lone-wolf-deals-api-openapi.yml",
+   "openapi/_original/lone-wolf-transact-api-openapi.yml",
+   "openapi/_original/lone-wolf-transactiondesk-api-openapi.yml",
+   "openapi/_original/lone-wolf-wolfconnect-api-openapi.yml",
+   "openapi/_original/lone-wolf-zipform-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "namirial",
+  "specs": [
+   "openapi/_original/namirial-connectors-apis.yaml",
+   "openapi/_original/namirial-connectors-openapi.yml",
+   "openapi/_original/namirial-esignanywhere-openapi.yml",
+   "openapi/_original/namirial-esignanywhere-v6-swagger.json"
+  ]
+ },
+ {
+  "slug": "nitro-software",
+  "specs": [
+   "openapi/_original/nitro-software-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "notarize",
+  "specs": [
+   "openapi/_original/notarize-logs-api-specification-openapi.yml",
+   "openapi/_original/notarize-logs-api-specification-readme-slices.json",
+   "openapi/_original/notarize-oauth-2-0-api-specification-openapi.yml",
+   "openapi/_original/notarize-oauth-2-0-api-specification-readme-slices.json",
+   "openapi/_original/notarize-proof-business-api-specification-openapi.yml",
+   "openapi/_original/notarize-proof-business-api-specification-readme-slices.json",
+   "openapi/_original/notarize-proof-real-estate-api-specification-openapi.yml",
+   "openapi/_original/notarize-proof-real-estate-api-specification-readme-slices.json",
+   "openapi/_original/notarize-proof-verifiable-credentials-api-specification-openapi.yml",
+   "openapi/_original/notarize-proof-verifiable-credentials-api-specification-readme-slices.json",
+   "openapi/_original/notarize-scim-api-specification-openapi.yml",
+   "openapi/_original/notarize-scim-api-specification-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "oneflow",
+  "specs": [
+   "openapi/_original/oneflow-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pandadoc",
+  "specs": [
+   "openapi/_original/pandadoc-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "paperform",
+  "specs": [
+   "openapi/_original/paperform-openapi.json"
+  ]
+ },
+ {
+  "slug": "pdf-co",
+  "specs": [
+   "openapi/_original/pdf-co-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pdffiller",
+  "specs": [
+   "openapi/_original/pdffiller-pdffiller-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rentberry",
+  "specs": [
+   "openapi/_original/rentberry-openapi.json",
+   "openapi/_original/rentberry-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rocket-lawyer",
+  "specs": [
+   "openapi/_original/rocket-lawyer-authentication-api-openapi.yml",
+   "openapi/_original/rocket-lawyer-events-api-openapi.yml",
+   "openapi/_original/rocket-lawyer-rocketdocument-api-openapi.yml",
+   "openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sadq-holding-limited",
+  "specs": [
+   "openapi/_original/sadq-holding-limited-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "sap-ariba",
+  "specs": [
+   "openapi/_original/sap-ariba-procurement-api.yml"
+  ]
+ },
+ {
+  "slug": "scrive",
+  "specs": [
+   "openapi/_original/scrive-openapi.yml"
+  ]
+ },
+ {
+  "slug": "signaturely",
+  "specs": [
+   "openapi/_original/signaturely-openapi.yml"
+  ]
+ },
+ {
+  "slug": "signicat",
+  "specs": [
+   "openapi/_original/account-management-openapi.json",
+   "openapi/_original/archive-openapi.json",
+   "openapi/_original/audit-logs-openapi.json",
+   "openapi/_original/data-verification-openapi.json",
+   "openapi/_original/digital-evidence-management-openapi.json",
+   "openapi/_original/domain-management-openapi.json",
+   "openapi/_original/eid-hub-openapi.json",
+   "openapi/_original/events-openapi.json",
+   "openapi/_original/id-document-and-biometric-verification-openapi.json",
+   "openapi/_original/mint-openapi.json",
+   "openapi/_original/mobileid-admin-openapi.json",
+   "openapi/_original/mobileid-openapi.json",
+   "openapi/_original/oidc-config-openapi.json",
+   "openapi/_original/ongoing-monitoring-openapi.json",
+   "openapi/_original/ongoing-monitoring-person-openapi.json",
+   "openapi/_original/reuseid-onboarding-openapi.json",
+   "openapi/_original/reuseid-openapi.json",
+   "openapi/_original/secure-share-openapi.json",
+   "openapi/_original/siam-openapi.json",
+   "openapi/_original/sign-openapi.json",
+   "openapi/_original/signicat-account-management-openapi.yml",
+   "openapi/_original/signicat-archive-openapi.yml",
+   "openapi/_original/signicat-audit-logs-openapi.yml",
+   "openapi/_original/signicat-data-verification-openapi.yml",
+   "openapi/_original/signicat-digital-evidence-management-openapi.yml",
+   "openapi/_original/signicat-domain-management-openapi.yml",
+   "openapi/_original/signicat-eid-hub-openapi.yml",
+   "openapi/_original/signicat-events-openapi.yml",
+   "openapi/_original/signicat-id-document-and-biometric-verification-openapi.yml",
+   "openapi/_original/signicat-mint-openapi.yml",
+   "openapi/_original/signicat-mobileid-admin-openapi.yml",
+   "openapi/_original/signicat-mobileid-openapi.yml",
+   "openapi/_original/signicat-oidc-config-openapi.yml",
+   "openapi/_original/signicat-ongoing-monitoring-openapi.yml",
+   "openapi/_original/signicat-ongoing-monitoring-person-openapi.yml",
+   "openapi/_original/signicat-reuseid-onboarding-openapi.yml",
+   "openapi/_original/signicat-reuseid-openapi.yml",
+   "openapi/_original/signicat-secure-share-openapi.yml",
+   "openapi/_original/signicat-siam-openapi.yml",
+   "openapi/_original/signicat-sign-openapi.yml",
+   "openapi/_original/signicat-signing-enterprise-openapi.yml",
+   "openapi/_original/signicat-signing-express-openapi.yml",
+   "openapi/_original/signicat-usage-openapi.yml",
+   "openapi/_original/signing-enterprise-openapi.json",
+   "openapi/_original/signing-express-openapi.json",
+   "openapi/_original/usage-openapi.json"
+  ]
+ },
+ {
+  "slug": "signnow",
+  "specs": [
+   "openapi/_original/signnow-openapi.yml"
+  ]
+ },
+ {
+  "slug": "signsealship",
+  "specs": [
+   "openapi/_original/signsealship-partner-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "signwell",
+  "specs": [
+   "openapi/_original/signwell-signwell-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sirion",
+  "specs": [
+   "openapi/_original/sirion-openapi.yml"
+  ]
+ },
+ {
+  "slug": "skribble",
+  "specs": [
+   "openapi/_original/skribble-sign-v2-openapi.yml",
+   "openapi/_original/skribble-sign-v2-openapi_2.yml",
+   "openapi/_original/skribble-sign-v3-openapi.yml",
+   "openapi/_original/skribble-sign-v3-openapi_2.yml",
+   "openapi/_original/skribble-validation-v1-openapi.yml",
+   "openapi/_original/skribble-validation-v1-openapi_2.yml"
+  ]
+ },
+ {
+  "slug": "skyslope",
+  "specs": [
+   "openapi/_original/skyslope-forms-partnership-openapi.yml",
+   "openapi/_original/skyslope-offers-openapi.yml"
+  ]
+ },
+ {
+  "slug": "spotdraft",
+  "specs": [
+   "openapi/_original/spotdraft-openapi.yml"
+  ]
+ },
+ {
+  "slug": "swisscom",
+  "specs": [
+   "openapi/_original/swisscom-all-in-signing-service-openapi.yml",
+   "openapi/_original/swisscom-sign-integration-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "thehiveryiq-com",
+  "specs": [
+   "openapi/_original/thehiveryiq-com-hivecompute-openapi.json",
+   "openapi/_original/thehiveryiq-com-hivecompute-openapi.yml",
+   "openapi/_original/thehiveryiq-com-hivemorph-openapi.json",
+   "openapi/_original/thehiveryiq-com-hivemorph-openapi.yml"
+  ]
+ },
+ {
+  "slug": "trelica",
+  "specs": [
+   "openapi/_original/trelica-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tropic",
+  "specs": [
+   "openapi/_original/tropic-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tvarka",
+  "specs": [
+   "openapi/_original/tvarka-atk-api-auth-openapi.yaml",
+   "openapi/_original/tvarka-atk-api-openapi-original.json",
+   "openapi/_original/tvarka-atk-api-sign-openapi.yaml",
+   "openapi/_original/tvarka-sign-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "yousign",
+  "specs": [
+   "openapi/_original/yousign-public-api-v3-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zoho-sign",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "zoho-writer",
+  "specs": [
+   "openapi/_original/zoho-writer-openapi.json"
+  ]
+ }
+]

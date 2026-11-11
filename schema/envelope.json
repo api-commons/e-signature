@@ -1,0 +1,224 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/e-signature/main/schema/envelope.json",
+  "title": "Envelope",
+  "description": "The common envelope in E-Signature, distilled from 30 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.933,
+      "x-commons-providers": 28,
+      "x-commons-spellings": [
+        "id",
+        "documentId",
+        "document_id",
+        "envelope_id",
+        "uuid",
+        "envelopeId",
+        "ID",
+        "Id"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.767,
+      "x-commons-providers": 23,
+      "x-commons-spellings": [
+        "name",
+        "title",
+        "file_name",
+        "fileName",
+        "emailSubject",
+        "Name",
+        "subject"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.733,
+      "x-commons-providers": 22,
+      "x-commons-spellings": [
+        "status",
+        "state",
+        "EnvelopeStatus"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.7,
+      "x-commons-providers": 21,
+      "x-commons-spellings": [
+        "created_at",
+        "createdAt",
+        "date_created",
+        "created",
+        "sent_at",
+        "createdDateTime",
+        "createdDate",
+        "created_date"
+      ],
+      "format": "date-time"
+    },
+    "metadata": {
+      "type": "array",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "metadata",
+        "tags",
+        "labels",
+        "customFields",
+        "custom_fields",
+        "MetaData",
+        "metaData",
+        "custom"
+      ]
+    },
+    "sender_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.467,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "owner",
+        "sender",
+        "createdBy",
+        "created_by",
+        "author",
+        "sender_id"
+      ]
+    },
+    "signers": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.467,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "recipients",
+        "signers",
+        "roles",
+        "parties",
+        "submitters"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.433,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "updated_at",
+        "updatedAt",
+        "updated",
+        "lastModified",
+        "statusChangedDateTime",
+        "updated_date",
+        "date_modified"
+      ],
+      "format": "date-time"
+    },
+    "template_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.367,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "template_id",
+        "template",
+        "templateId",
+        "template_ids"
+      ]
+    },
+    "fields": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.3,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "fields"
+      ]
+    },
+    "expires_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.267,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "expires_at",
+        "expiration_date",
+        "expiry",
+        "expire_at"
+      ],
+      "format": "date-time"
+    },
+    "documents": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.233,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "attachments",
+        "documentIds",
+        "files"
+      ]
+    },
+    "completed_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "completed_at",
+        "signed_at",
+        "completedAt",
+        "completedDateTime"
+      ],
+      "format": "date-time"
+    },
+    "content_type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "contentType",
+        "content_type"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "source"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "version"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "e-signature",
+    "concept": "envelope",
+    "providers": 30,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

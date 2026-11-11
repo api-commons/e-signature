@@ -1,0 +1,55 @@
+provider: cacheflow
+apis_io: https://apis.io/providers/cacheflow/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - documents
+    properties:
+      id: id
+      name: fileName
+      created_at: createdAt
+      sender_id: createdBy
+      updated_at: updatedAt
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/cacheflow-api-openapi.yml#GET /api/latest/documents/{id}
+    - openapi/_original/cacheflow-api-openapi.yml#PATCH /api/latest/documents/{id}
+    - openapi/_original/cacheflow-openapi.json#GET /api/latest/documents/{id}
+    - openapi/_original/cacheflow-openapi.json#PATCH /api/latest/documents/{id}
+  template:
+    path_segment:
+    - templates
+    - template
+    properties:
+      id: id
+      name: name
+      created_at: createdAt
+      updated_at: updatedAt
+      description: description
+      type: type
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/cacheflow-api-openapi.yml#GET /api/latest/checkout/template/{id}
+    - openapi/_original/cacheflow-api-openapi.yml#GET /api/latest/settings/branding/templates
+    - openapi/_original/cacheflow-api-openapi.yml#GET /api/latest/settings/branding/templates/{template_id}
+    - openapi/_original/cacheflow-api-openapi.yml#GET /api/latest/settings/branding/{reference_type}/templates
+    - openapi/_original/cacheflow-api-openapi.yml#POST /api/latest/settings/branding/templates
+  signature_field:
+    path_segment:
+    - fields
+    properties:
+      type: type
+      name:
+      - name
+      - label
+      - displayName
+      description: description
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/cacheflow-api-openapi.yml#GET /api/latest/data/external-crm/domain/{reference}/fields
+    - openapi/_original/cacheflow-api-openapi.yml#GET /api/latest/data/external-crm/{source}/{reference}/fields
+    - openapi/_original/cacheflow-openapi.json#GET /api/latest/data/external-crm/domain/{reference}/fields
+    - openapi/_original/cacheflow-openapi.json#GET /api/latest/data/external-crm/{source}/{reference}/fields

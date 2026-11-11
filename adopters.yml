@@ -1,0 +1,233 @@
+context: e-signature
+generated: '2026-11-10'
+adopters:
+- provider: agree-com
+  apis_io: https://apis.io/providers/agree-com/
+  crosswalk: crosswalk/agree-com.yml
+  concepts:
+  - envelope
+  - template
+- provider: airslate
+  apis_io: https://apis.io/providers/airslate/
+  crosswalk: crosswalk/airslate.yml
+  concepts:
+  - envelope
+  - signature_field
+  - signer
+  - template
+- provider: cacheflow
+  apis_io: https://apis.io/providers/cacheflow/
+  crosswalk: crosswalk/cacheflow.yml
+  concepts:
+  - envelope
+  - signature_field
+  - template
+- provider: concord-com
+  apis_io: https://apis.io/providers/concord-com/
+  crosswalk: crosswalk/concord-com.yml
+  concepts:
+  - envelope
+  - signature_field
+- provider: conga
+  apis_io: https://apis.io/providers/conga/
+  crosswalk: crosswalk/conga.yml
+  concepts:
+  - envelope
+  - signature_field
+  - template
+- provider: contractbook
+  apis_io: https://apis.io/providers/contractbook/
+  crosswalk: crosswalk/contractbook.yml
+  concepts:
+  - envelope
+  - template
+- provider: docspring
+  apis_io: https://apis.io/providers/docspring/
+  crosswalk: crosswalk/docspring.yml
+  concepts:
+  - envelope
+  - template
+- provider: documenso
+  apis_io: https://apis.io/providers/documenso/
+  crosswalk: crosswalk/documenso.yml
+  concepts:
+  - envelope
+  - signature_field
+  - signer
+  - template
+- provider: docupilot
+  apis_io: https://apis.io/providers/docupilot/
+  crosswalk: crosswalk/docupilot.yml
+  concepts:
+  - envelope
+  - signer
+  - template
+- provider: docuseal
+  apis_io: https://apis.io/providers/docuseal/
+  crosswalk: crosswalk/docuseal.yml
+  concepts:
+  - envelope
+  - signer
+  - template
+- provider: docusign
+  apis_io: https://apis.io/providers/docusign/
+  crosswalk: crosswalk/docusign.yml
+  concepts:
+  - envelope
+  - signature_field
+  - signer
+  - template
+- provider: evisort
+  apis_io: https://apis.io/providers/evisort/
+  crosswalk: crosswalk/evisort.yml
+  concepts:
+  - envelope
+  - signature_field
+- provider: feathery
+  apis_io: https://apis.io/providers/feathery/
+  crosswalk: crosswalk/feathery.yml
+  concepts:
+  - envelope
+  - template
+- provider: firma-dev
+  apis_io: https://apis.io/providers/firma-dev/
+  crosswalk: crosswalk/firma-dev.yml
+  concepts:
+  - envelope
+  - signature_field
+  - template
+- provider: getaccept
+  apis_io: https://apis.io/providers/getaccept/
+  crosswalk: crosswalk/getaccept.yml
+  concepts:
+  - envelope
+  - signature_field
+  - signer
+  - template
+- provider: gonitro
+  apis_io: https://apis.io/providers/gonitro/
+  crosswalk: crosswalk/gonitro.yml
+  concepts:
+  - envelope
+  - signature_field
+  - signer
+- provider: ironclad
+  apis_io: https://apis.io/providers/ironclad/
+  crosswalk: crosswalk/ironclad.yml
+  concepts:
+  - envelope
+  - signer
+- provider: jotform
+  apis_io: https://apis.io/providers/jotform/
+  crosswalk: crosswalk/jotform.yml
+  concepts:
+  - envelope
+- provider: jurisign
+  apis_io: https://apis.io/providers/jurisign/
+  crosswalk: crosswalk/jurisign.yml
+  concepts:
+  - envelope
+  - template
+- provider: lone-wolf
+  apis_io: https://apis.io/providers/lone-wolf/
+  crosswalk: crosswalk/lone-wolf.yml
+  concepts:
+  - envelope
+  - template
+- provider: namirial
+  apis_io: https://apis.io/providers/namirial/
+  crosswalk: crosswalk/namirial.yml
+  concepts:
+  - envelope
+  - template
+- provider: notarize
+  apis_io: https://apis.io/providers/notarize/
+  crosswalk: crosswalk/notarize.yml
+  concepts:
+  - envelope
+  - template
+- provider: pandadoc
+  apis_io: https://apis.io/providers/pandadoc/
+  crosswalk: crosswalk/pandadoc.yml
+  concepts:
+  - envelope
+  - signature_field
+  - signer
+  - template
+- provider: paperform
+  apis_io: https://apis.io/providers/paperform/
+  crosswalk: crosswalk/paperform.yml
+  concepts:
+  - envelope
+  - signature_field
+- provider: pdffiller
+  apis_io: https://apis.io/providers/pdffiller/
+  crosswalk: crosswalk/pdffiller.yml
+  concepts:
+  - envelope
+  - signature_field
+  - signer
+  - template
+- provider: rocket-lawyer
+  apis_io: https://apis.io/providers/rocket-lawyer/
+  crosswalk: crosswalk/rocket-lawyer.yml
+  concepts:
+  - envelope
+  - signer
+  - template
+- provider: sadq-holding-limited
+  apis_io: https://apis.io/providers/sadq-holding-limited/
+  crosswalk: crosswalk/sadq-holding-limited.yml
+  concepts:
+  - envelope
+  - template
+- provider: signaturely
+  apis_io: https://apis.io/providers/signaturely/
+  crosswalk: crosswalk/signaturely.yml
+  concepts:
+  - envelope
+  - signer
+  - template
+- provider: signicat
+  apis_io: https://apis.io/providers/signicat/
+  crosswalk: crosswalk/signicat.yml
+  concepts:
+  - envelope
+  - signer
+- provider: signwell
+  apis_io: https://apis.io/providers/signwell/
+  crosswalk: crosswalk/signwell.yml
+  concepts:
+  - envelope
+  - signer
+- provider: skribble
+  apis_io: https://apis.io/providers/skribble/
+  crosswalk: crosswalk/skribble.yml
+  concepts:
+  - envelope
+  - signer
+- provider: skyslope
+  apis_io: https://apis.io/providers/skyslope/
+  crosswalk: crosswalk/skyslope.yml
+  concepts:
+  - envelope
+  - template
+- provider: thehiveryiq-com
+  apis_io: https://apis.io/providers/thehiveryiq-com/
+  crosswalk: crosswalk/thehiveryiq-com.yml
+  concepts:
+  - envelope
+  - template
+- provider: yousign
+  apis_io: https://apis.io/providers/yousign/
+  crosswalk: crosswalk/yousign.yml
+  concepts:
+  - envelope
+  - signature_field
+  - signer
+  - template
+- provider: zoho-writer
+  apis_io: https://apis.io/providers/zoho-writer/
+  crosswalk: crosswalk/zoho-writer.yml
+  concepts:
+  - envelope

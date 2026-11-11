@@ -1,0 +1,27 @@
+provider: notarize
+apis_io: https://apis.io/providers/notarize/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - documents
+    properties:
+      id: id
+      name: name
+      created_at: date_created
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/notarize-proof-business-api-specification-openapi.yml#DELETE /v1/documents/{id}
+    - openapi/_original/notarize-proof-business-api-specification-openapi.yml#PATCH /v1/documents/{id}
+    - openapi/_original/notarize-proof-business-api-specification-openapi.yml#PUT /v1/documents/{id}
+    - openapi/_original/notarize-proof-real-estate-api-specification-openapi.yml#DELETE /mortgage/v2/documents/{id}
+    - openapi/_original/notarize-proof-real-estate-api-specification-openapi.yml#PATCH /mortgage/v2/documents/{id}
+  template:
+    path_segment:
+    - templates
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/notarize-proof-business-api-specification-openapi.yml#GET /v1/templates
+    - openapi/_original/notarize-proof-real-estate-api-specification-openapi.yml#GET /mortgage/v2/templates

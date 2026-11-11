@@ -1,0 +1,66 @@
+provider: pdffiller
+apis_io: https://apis.io/providers/pdffiller/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - signature_requests
+    properties:
+      id:
+      - id
+      - document_id
+      status: status
+      created_at: created_at
+      signers: recipients
+      updated_at: updated_at
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/pdffiller-pdffiller-api-openapi.yml#DELETE /signature_requests/{signature_request_id}
+    - openapi/_original/pdffiller-pdffiller-api-openapi.yml#GET /signature_requests
+    - openapi/_original/pdffiller-pdffiller-api-openapi.yml#GET /signature_requests/{signature_request_id}
+    - openapi/_original/pdffiller-pdffiller-api-openapi.yml#POST /signature_requests
+  signer:
+    path_segment:
+    - recipients
+    properties:
+      email: email
+      id: id
+      status: status
+      name: name
+      role: role
+      order: order
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/pdffiller-pdffiller-api-openapi.yml#GET /signature_requests/{signature_request_id}/recipients
+    - openapi/_original/pdffiller-pdffiller-api-openapi.yml#GET /signature_requests/{signature_request_id}/recipients/{recipient_id}
+    - openapi/_original/pdffiller-pdffiller-api-openapi.yml#PUT /signature_requests/{signature_request_id}/recipients/{recipient_id}
+  template:
+    path_segment:
+    - templates
+    properties:
+      id: id
+      name: name
+      created_at: created_at
+      updated_at: updated_at
+      type: type
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/pdffiller-pdffiller-api-openapi.yml#DELETE /templates/{template_id}
+    - openapi/_original/pdffiller-pdffiller-api-openapi.yml#GET /templates
+    - openapi/_original/pdffiller-pdffiller-api-openapi.yml#GET /templates/{template_id}
+    - openapi/_original/pdffiller-pdffiller-api-openapi.yml#POST /templates
+    - openapi/_original/pdffiller-pdffiller-api-openapi.yml#PUT /templates/{template_id}
+  signature_field:
+    path_segment:
+    - fields
+    properties:
+      type: type
+      id: id
+      name: name
+      required: required
+      signer_id: role
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/pdffiller-pdffiller-api-openapi.yml#GET /templates/{template_id}/fields

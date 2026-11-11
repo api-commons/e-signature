@@ -1,0 +1,18 @@
+provider: zoho-writer
+apis_io: https://apis.io/providers/zoho-writer/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - documents
+    properties:
+      id: document_id
+      status: status
+      sender_id: created_by
+      version: version
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/zoho-writer-openapi.json#GET /documents
+    - openapi/_original/zoho-writer-openapi.json#GET /documents/{document_id}
+    - openapi/_original/zoho-writer-openapi.json#POST /documents

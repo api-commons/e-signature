@@ -1,0 +1,21 @@
+provider: evisort
+apis_io: https://apis.io/providers/evisort/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - documents
+    properties:
+      name: name
+      fields: fields
+    core_coverage: 0.2
+    evidence:
+    - openapi/_original/evisort-openapi.yml#POST /documents
+  signature_field:
+    path_segment:
+    - fields
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/evisort-openapi.yml#GET /documents/{evisortId}/fields

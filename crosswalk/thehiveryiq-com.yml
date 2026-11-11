@@ -1,0 +1,26 @@
+provider: thehiveryiq-com
+apis_io: https://apis.io/providers/thehiveryiq-com/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - envelope
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.json#GET /v1/cre/envelope/{cre_id}
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.json#GET /v1/trail/envelope/{operator_did}
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.yml#GET /v1/cre/envelope/{cre_id}
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.yml#GET /v1/trail/envelope/{operator_did}
+  template:
+    path_segment:
+    - template
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.json#GET /v1/law/freight/template
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.json#GET /v1/law/insurance/template
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.json#GET /v1/tradefinance/template
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.yml#GET /v1/law/freight/template
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.yml#GET /v1/law/insurance/template

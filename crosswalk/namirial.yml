@@ -1,0 +1,40 @@
+provider: namirial
+apis_io: https://apis.io/providers/namirial/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - envelopes
+    - envelope
+    - documents
+    properties:
+      id:
+      - id
+      - Id
+      - EnvelopeId
+      name:
+      - name
+      - Name
+      status:
+      - status
+      - EnvelopeStatus
+      metadata: MetaData
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/namirial-connectors-apis.yaml#GET /documents/{documentId}
+    - openapi/_original/namirial-connectors-apis.yaml#GET /envelopes/{envelopeId}
+    - openapi/_original/namirial-connectors-apis.yaml#POST /envelopes
+    - openapi/_original/namirial-connectors-openapi.yml#GET /documents/{documentId}
+    - openapi/_original/namirial-connectors-openapi.yml#GET /envelopes/{envelopeId}
+  template:
+    path_segment:
+    - template
+    properties:
+      id: Id
+      name: Name
+      created_at: CreationDate
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/namirial-esignanywhere-openapi.yml#GET /v6/template/{templateId}
+    - openapi/_original/namirial-esignanywhere-v6-swagger.json#GET /v6/template/{templateId}

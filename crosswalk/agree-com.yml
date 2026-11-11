@@ -1,0 +1,34 @@
+provider: agree-com
+apis_io: https://apis.io/providers/agree-com/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - agreements
+    properties:
+      id: id
+      name: name
+      status: status
+      signers:
+      - signers
+      - recipients
+      template_id: template_id
+      version: version
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/agree-com-api-openapi-original.json#DELETE /api/v1/agreements/{id}
+    - openapi/_original/agree-com-api-openapi-original.json#GET /api/v1/agreements
+    - openapi/_original/agree-com-api-openapi-original.json#GET /api/v1/agreements/{id}
+    - openapi/_original/agree-com-api-openapi-original.json#PATCH /api/v1/agreements/{id}
+    - openapi/_original/agree-com-api-openapi-original.json#POST /api/v1/agreements
+  template:
+    path_segment:
+    - templates
+    properties:
+      id: id
+      name: name
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/agree-com-api-openapi-original.json#GET /api/v1/agreements/templates
+    - openapi/_original/agree-com-api-openapi-original.json#GET /api/v1/agreements/templates/{id}

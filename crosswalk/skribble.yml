@@ -1,0 +1,36 @@
+provider: skribble
+apis_io: https://apis.io/providers/skribble/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - signature-requests
+    - documents
+    properties:
+      id:
+      - id
+      - document_id
+      name: title
+      created_at: created_at
+      metadata: custom
+      sender_id: owner
+      updated_at: updated_at
+      expires_at: expires_at
+      documents: attachments
+      content_type: content_type
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/skribble-sign-v2-openapi.yml#DELETE /documents/{DOC_ID}
+    - openapi/_original/skribble-sign-v2-openapi.yml#DELETE /signature-requests/{SR_ID}
+    - openapi/_original/skribble-sign-v2-openapi.yml#GET /documents
+    - openapi/_original/skribble-sign-v2-openapi.yml#GET /documents/{DOC_ID}
+    - openapi/_original/skribble-sign-v2-openapi.yml#GET /signature-requests
+  signer:
+    path_segment:
+    - signers
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/skribble-validation-v1-openapi.yml#GET /infos/{id}/signers
+    - openapi/_original/skribble-validation-v1-openapi_2.yml#GET /infos/{id}/signers

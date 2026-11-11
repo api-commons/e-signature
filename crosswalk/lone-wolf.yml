@@ -1,0 +1,27 @@
+provider: lone-wolf
+apis_io: https://apis.io/providers/lone-wolf/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - documents
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/lone-wolf-transact-api-openapi.yml#DELETE /transact-workflow/v1/users/{userId}/documents/{documentId}
+    - openapi/_original/lone-wolf-transact-api-openapi.yml#GET /authentisign/v3/api/v3/users/{userId}/signings/{signingId}/documents
+    - openapi/_original/lone-wolf-transact-api-openapi.yml#GET /transact-workflow/v1/users/{userId}/documents
+    - openapi/_original/lone-wolf-transact-api-openapi.yml#GET /transact-workflow/v1/users/{userId}/documents/{documentId}
+    - openapi/_original/lone-wolf-transact-api-openapi.yml#POST /transact-workflow/v1/Documents
+  template:
+    path_segment:
+    - templates
+    properties:
+      id: id
+      name: name
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/lone-wolf-transact-api-openapi.yml#GET /transact-workflow/v1/users/{userId}/templates
+    - openapi/_original/lone-wolf-transact-api-openapi.yml#GET /transact-workflow/v1/users/{userId}/templates/{templateId}
+    - openapi/_original/lone-wolf-zipform-api-openapi.yml#GET /templates

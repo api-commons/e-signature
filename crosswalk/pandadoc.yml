@@ -1,0 +1,68 @@
+provider: pandadoc
+apis_io: https://apis.io/providers/pandadoc/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - documents
+    properties:
+      id: id
+      name: name
+      status: status
+      created_at: date_created
+      metadata:
+      - metadata
+      - tags
+      signers: recipients
+      updated_at: date_modified
+      template_id: template
+      fields: fields
+      expires_at: expiration_date
+      version: version
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/pandadoc-rest-api-openapi.yml#DELETE /documents/{id}
+    - openapi/_original/pandadoc-rest-api-openapi.yml#GET /documents
+    - openapi/_original/pandadoc-rest-api-openapi.yml#GET /documents/{id}
+    - openapi/_original/pandadoc-rest-api-openapi.yml#POST /documents
+  signer:
+    path_segment:
+    - recipients
+    properties:
+      email: email
+      id: id
+      role: role
+      order: signing_order
+      first_name: first_name
+      last_name: last_name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/pandadoc-rest-api-openapi.yml#DELETE /documents/{id}/recipients/{recipient_id}
+    - openapi/_original/pandadoc-rest-api-openapi.yml#GET /documents/{id}/recipients
+    - openapi/_original/pandadoc-rest-api-openapi.yml#PATCH /documents/{id}/recipients/{recipient_id}
+    - openapi/_original/pandadoc-rest-api-openapi.yml#POST /documents/{id}/recipients
+  template:
+    path_segment:
+    - templates
+    properties:
+      id: id
+      name: name
+      created_at: date_created
+      updated_at: date_modified
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/pandadoc-rest-api-openapi.yml#DELETE /templates/{id}
+    - openapi/_original/pandadoc-rest-api-openapi.yml#GET /templates
+  signature_field:
+    path_segment:
+    - fields
+    properties:
+      type: type
+      name: name
+      required: required
+      signer_id: role
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/pandadoc-rest-api-openapi.yml#GET /documents/{id}/fields
+    - openapi/_original/pandadoc-rest-api-openapi.yml#PATCH /documents/{id}/fields

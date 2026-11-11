@@ -1,0 +1,14 @@
+provider: jotform
+apis_io: https://apis.io/providers/jotform/
+context: e-signature
+generated: '2026-11-10'
+concepts:
+  envelope:
+    path_segment:
+    - submissions
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/jotform-openapi.yml#GET /form/{formID}/submissions
+    - openapi/_original/jotform-openapi.yml#GET /user/submissions
+    - openapi/_original/jotform-openapi.yml#POST /form/{formID}/submissions

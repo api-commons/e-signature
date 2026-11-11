@@ -1,0 +1,54 @@
+aid: common-e-signature
+name: E-Signature
+type: Common
+description: 'The common E-Signature vocabulary, distilled from the harvested OpenAPI of 72 providers in APIs.io:
+  shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each
+  provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- E-Signature
+- eSignature
+- Electronic Signature
+- Digital Signature
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/e-signature/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-e-signature:e-signature
+  name: Common E-Signature Interface
+  description: The E-Signature interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/e-signature
+  tags:
+  - E-Signature
+  - eSignature
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/e-signature/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/e-signature/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/e-signature/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: envelope
+    url: https://raw.githubusercontent.com/api-commons/e-signature/main/schema/envelope.json
+  - type: JSONSchema
+    name: signer
+    url: https://raw.githubusercontent.com/api-commons/e-signature/main/schema/signer.json
+  - type: JSONSchema
+    name: template
+    url: https://raw.githubusercontent.com/api-commons/e-signature/main/schema/template.json
+  - type: JSONSchema
+    name: signature_field
+    url: https://raw.githubusercontent.com/api-commons/e-signature/main/schema/signature_field.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/e-signature/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

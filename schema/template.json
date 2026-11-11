@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/e-signature/main/schema/template.json",
+  "title": "Template",
+  "description": "The common template in E-Signature, distilled from 22 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.955,
+      "x-commons-providers": 21,
+      "x-commons-spellings": [
+        "id",
+        "templateId",
+        "document_id",
+        "template_id",
+        "documentId",
+        "envelopeId",
+        "Id"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.818,
+      "x-commons-providers": 18,
+      "x-commons-spellings": [
+        "name",
+        "title",
+        "fileName",
+        "emailSubject",
+        "subject",
+        "Name"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.591,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "created_at",
+        "createdAt",
+        "createdDate",
+        "created",
+        "createdDateTime",
+        "created_date",
+        "CreationDate",
+        "date_created"
+      ],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.455,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "updated_at",
+        "lastModified",
+        "updatedAt",
+        "statusChangedDateTime",
+        "updated_date",
+        "date_modified"
+      ],
+      "format": "date-time"
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.409,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "description",
+        "emailBlurb"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.318,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "type"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.273,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "status",
+        "document_status"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "e-signature",
+    "concept": "template",
+    "providers": 22,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}
