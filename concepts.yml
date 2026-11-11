@@ -67,8 +67,8 @@ duplicates:
   gonitro: [nitro-software]
 
 findings:
-  - "A recipient agrees on email, name, role and status -- the routing information every signing
-    flow needs -- across DocuSign, Dropbox Sign, PandaDoc, Documenso and the rest."
+  - "A recipient agrees on email, name, role and status -- the routing information every
+    signing flow needs -- across DocuSign, PandaDoc, Documenso and the rest."
   - "Signature fields agree on type, name and whether they are required, so a field layout
     maps between products even where the documents do not."
   - "The envelope agrees on id, name, status, created_at and its signers; what else it

@@ -17,7 +17,7 @@ generated. Every number below is a count of providers.
 | template | 25 | 22 | id 100%, name 91%, created_at 68%, updated_at 50% | templates 22, template 6 |
 | signature_field | 14 | 12 | type 92%, id 67%, name 67%, required 67%, recipient_id 50% | fields 14, tabs 1 |
 
-Cohort: 72 providers with harvested OpenAPI, 35 crosswalks. Of the providers exposing a envelope: 74% create, 80% list, 77% fetch, 43% update, 71% delete. Generated 2026-11-10 by build.py.
+Cohort: 72 providers with harvested OpenAPI, 35 crosswalks. Of the providers exposing a envelope: 74% create, 80% list, 77% fetch, 43% update, 71% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The
@@ -25,7 +25,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 
 ## What the measurement shows
 
-- A recipient agrees on email, name, role and status -- the routing information every signing flow needs -- across DocuSign, Dropbox Sign, PandaDoc, Documenso and the rest.
+- A recipient agrees on email, name, role and status -- the routing information every signing flow needs -- across DocuSign, PandaDoc, Documenso and the rest.
 - Signature fields agree on type, name and whether they are required, so a field layout maps between products even where the documents do not.
 - The envelope agrees on id, name, status, created_at and its signers; what else it carries (documents, expiry) is modelled differently by every provider.
 
